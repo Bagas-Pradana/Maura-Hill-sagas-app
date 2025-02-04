@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <title>Produk</title>
+        <link rel="stylesheet" href="dist/output.css" />
+        <link rel="stylesheet" href="dist/style.css"/>
+    </head>
+    <section class="bg-shade-white">
+    <!-- ---------------------------------------------------------------PRODUK KAMI-------------------------------------------- -->
+    <!-- <div class="bg-rounded-home"></div> -->
+    <!-- Header Section -->
+    <header id="header" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 backdrop-blur-sm">
+        <div id="customize" class="container xl:px-20">
+            <div class="w-full flex items-center justify-between relative">
+                <div class="px-0">
+                    <a href="#" class="font-bold text-lg text-primary block py-3">
+                        <img class="" src="dist/img/logo-maura.png" alt="Logo" width="100"/>
+                    </a>
+                </div>
+                <div class="flex items-center px-0 lg:w-[60%] xl:w-1/2">
+                    <button id="hamburger" name="hamburger" class="block absolute right-0 lg:hidden">
+                        <span class="hamburger-line origin-top-right"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line origin-bottom-right"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-xl rounded-md max-w-[350px] w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+                        <ul class="block lg:flex lg:justify-between text-black">
+                            <li class="group transition-all duration-300 ease-in-out">
+                                <a href="#" class="navbar-link font-poppins text-primary-500 hover:font-bold">Beranda</a></li>
+                            <li class="group transition-all duration-300 ease-in-out">
+                                <a href="#" class="navbar-link font-bold font-poppins text-headline5 text-primary-500 hover:font-bold">Produk Kami</a>
+                            </li>
+                            <li class="group transition-all duration-300 ease-in-out">
+                                <a href="#" class="navbar-link font-poppins text-primary-500 hover:font-bold">Tentang Kami</a>
+                            </li>
+                            <li class="group transition-all duration-300 ease-in-out">
+                                <a href="#" class="navbar-link font-poppins text-primary-500 hover:font-bold">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full overflow-hidden">
+        <div class=" relative font-poppins bg-shade-white md:h-auto max-w-full">
+            <!-- <div class="relative flex flex-col bg-orange-500 h-max max-w-full"> -->
+            <img src="dist/img/p.png" alt="Profile" class="mb-24 sm:mb-20 opacity-15 bg-transparent object-right object-cover h-[65vh] md:h-auto lg:max-w-full">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 text-primary-500 md:w-auto font-bold  w-full text-center text-headline4 md:text-[40px] lg:text-headline3 xl:text-headline2">Produk Kami</span>
+            <!-- </div> -->
+            <!-- <div class="absolute mx-auto bottom-4 md:bottom-28 lg:bottom-48 left-1/2 -translate-x-1/2 items-center justify-center animate-custom-pulse">
+                <a href="#banner" class=" text-neutral-50 mx-auto block font-poppins text-headline4 -rotate-90 font-semibold">⟨</a>
+            </div> -->
+            <div class="absolute bg-shade-white flex flex-wrap -bottom-[7.8rem] left-1/2 -translate-x-1/2 z-10 mb-24 w-full justify-center">
+                <button type="button" id="rumah" class="py-2 px-12 text-headline6 sm:text-headline5 font-bold text-primary-500 border-4 border-primary-500 bg-neutral-200 sm:px-[4rem] md:py-1 md:px-[6.5rem] md:text-[30px] lg:text-[34px] lg:py-2 lg:px-[7rem] xl:px-36 xl:text-[38px] hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">RUMAH</button>
+                <button type="button" id="fasilitas" class="py-2 px-10 text-headline6 sm:text-headline5 font-bold text-primary-500 border-r-4 border-y-4 border-primary-500 bg-neutral-200 sm:px-[4rem] md:py-1 md:px-[6.5rem] md:text-[30px] lg:text-[34px] lg:py-2 lg:px-[7rem] xl:text-[38px] xl:px-36 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">FASILITAS</button>
+            </div>
+        </div>
+    </section>
+    <!-- End  Hero Section-->
+    <!-- Banner Section -->
+    <section id="banner-rumah-maura" class="min-h-screen flex items-center relative lg:pb-24">
+        <div class="relative bg-shade-white p-8 py-16 sm:p-8 sm:pb-16 flex flex-col gap-y-8 min-h-full justify-center lg:justify-between items-center text-headline4 md:text-headline3 sm:text-center sm:px-20 lg:flex-row lg:px-12 lg:p-0">
+            <div class="aspect-[6/5] max-w-[425px] lg:max-w-none w-full lg:w-[40%] lg:order-last shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-xl overflow-hidden">
+                <img src="dist/img/maura-house-1.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+            </div>
+            <div class="w-full md:w-[80%] lg:w-[45%] flex flex-col gap-y-4">
+                <span class="block font-bold text-slate-800 self-start sm:text-4xl sm:self-auto lg:text-headline3 lg:text-left">
+                    Rumah di 
+                    <span class="block pb-2 text-primary-500 font-bold leading-9 sm:text-4xl sm:leading-relaxed lg:text-headline3 lg:pb-0">
+                        Maura Hill
+                    </span>
+                </span>
+                <p class="text-justify text-body2 w-full">
+                    Rasakan pengalaman tinggal yang berbeda di <span class="text-primary-500">Maura Hill</span> dengan desain rumah yang memadukan gaya Scandinavian minimalis dan nuansa hangat ala Villa Bali. Perpaduan ini menghadirkan suasana yang elegan, nyaman, dan penuh ketenangan, seperti sedang berlibur di pulau tropis setiap hari.
+                </p>
+            </div>
+        </div>
+        <!-- <div class="absolute bottom-2 left-1/2 -translate-x-1/2 animate-custom-pulse">
+            <a href="#facility" class="text-primary-500 block text-headline4 -rotate-90 font-semibold">⟨</a>
+        </div>-->
+    </section>
+    <!-- --------------------------------------------------------MASJID--------------------------------------------------------------------- -->
+    <section id="banner-masjid" class="min-h-screen flex items-center relative lg:pb-24">
+            <div class="relative bg-shade-white p-8 py-16 sm:p-8 sm:pb-16 flex flex-col gap-y-8 min-h-full justify-center lg:justify-between items-center text-headline4 md:text-headline3 sm:text-center sm:px-20 lg:flex-row lg:px-12 lg:p-0">
+                <div class="aspect-[6/5] max-w-[425px] lg:max-w-none w-full lg:w-[40%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-xl lg:order-first overflow-hidden">
+                    <img src="dist/img/maura-masjid.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                </div>
+                <div class="w-full md:w-[80%] lg:w-[45%] flex flex-col gap-y-4">
+                        <span class="block pb-2 text-primary-500 font-bold leading-9 sm:leading-relaxed lg:text-headline3 lg:pb-0 self-start sm:text-4xl sm:self-auto lg:text-left">
+                            MASJID
+                        </span>
+                    <p class="text-justify text-body2 w-full">
+                        Dengan desain yang elegan dan ruang yang luas, masjid ini menjadi tempat yang sempurna untuk menjalankan kewajiban ibadah sehari-hari maupun kegiatan keagamaan lainnya. Terletak di pusat kawasan hunian, masjid ini mudah diakses oleh seluruh penghuni, memberikan kenyamanan dan kedamaian bagi keluarga Anda dalam setiap ibadah.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------------------------------------MASJID--------------------------------------------------------------------- -->
+        <!-- End Banner Section -->
+    <!-- Content Section-->
+    <section class="min-h-screen">
+        <div class="p-0 relative bg-neutral-200 sm:py-16 flex min-h-full justify-center items-center text-headline4 md:text-headline3 sm:text-center sm:px-4 md:px-9">
+         
+                 <div class="px-4 w-full bg-shade-white border-primary-500 pb-6 border-4 flex flex-col gap-y-8 sm:flex-row sm:flex-wrap justify-evenly md:justify-center lg:px-8">
+                      <!-- Button -->
+                    <div class="flex justify-evenly lg:justify-center gap-4 lg:gap-8 w-full overflow-x-auto px-4 pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4">
+                        <button type="button" id="rumah" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500 bg-primary-500 text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            EVEREST
+                        </button>
+                        
+                        <button type="button" id="fasilitas" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 text-primary-500 border-4 border-primary-500 bg-shade-white hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            MONSTERA
+                        </button>
+                        
+                        <button type="button" id="are" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 text-primary-500 border-4 border-primary-500 bg-shade-white hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </button>
+                    </div>
+                    <!-- button -->
+                    <!-- Gap -->
+                    <div class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
+                        
+                        <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
+                        <!-- <div class="relative flex justify-center aspect-[8/9.8] md:aspect-[8/7.25] py-6 w-full lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden"> -->
+                        <div class="relative sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden">
+                            <img id="everest-house" src="dist/img/house.png" alt="Profile" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-full h-full">
+                            <button id="left-button" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                                <img src="dist/img/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                            </button>
+                            <button id="right-button" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                                <img src="dist/img/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                            </button>
+                        </div>
+                        <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
+                        <div class="px-4 sm:px-0 lg:h-full gap-y-6 lg:gap-12 flex flex-col lg:items-center lg:justify-center sm:w-[80%] lg:w-[60%] xl:w-[70%] overflow-hidden max-w-full">
+                            
+                            <!-- Judul & Deskripsi -->
+                            <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
+                                <span class="block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                                    EVEREST
+                                </span>
+                                <div class="block md:flex md:flex-row md:justify-center lg:block">
+                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                                        Rumah 2 lantai dengan lebar 5 ini cocok untuk Anda dan keluarga Anda untuk bertumbuh bersama dan menikmati lingkungan yang nyaman.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <!-- Spesifikasi (Dibawah <p>) -->
+                            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
+                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                                    <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT EVEREST</span>
+                                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">DUA LANTAI</span>
+                                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">6 X 10</span>
+                                </div>
+                    
+                                <!-- Tabel (Dibawah div spesifikasi) -->
+                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
+                                    <table class="table-fixed min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                        <thead>
+                                            <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
+                                                <th class="px-2 break-words">Luas Tanah</th>
+                                                <th class="px-2 break-words">Luas Bangunan</th>
+                                                <th class="px-2 break-words">Kamar Tidur</th>
+                                                <th class="px-2 break-words">Kamar Mandi</th>
+                                                <th class="px-2 break-words">Parkir</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-2 border-primary-500 text-primary-500 bg-shade-white">
+                                                <td class="px-2 break-words">60</td>
+                                                <td class="px-2 break-words">44</td>
+                                                <td class="px-2 break-words">2</td>
+                                                <td class="px-2 break-words">2</td>
+                                                <td class="px-2 break-words">1 Mobil</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gap -->
+                </div>
+           
+            </div>
+        </section>
+<!-- -------------------------------------------------------------------------------------- -->
+    <div class="px-4 w-full bg-shade-white border-primary-500 pb-6 border-4 flex flex-col gap-y-8 sm:flex-row sm:flex-wrap justify-evenly md:justify-center lg:px-8">
+        <!-- Button -->
+    <div class="flex justify-evenly lg:justify-center gap-4 lg:gap-8 w-full overflow-x-auto px-4 pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4">
+        <button type="button" id="rumah" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500 bg-shade-white text-primary-500 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            EVEREST
+        </button>
+        
+        <button type="button" id="fasilitas" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500  text-neutral-50 bg-primary-500 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            MONSTERA
+        </button>
+        
+        <button type="button" id="are" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 text-primary-500 border-4 border-primary-500 bg-shade-white hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </button>
+    </div>
+    <!-- button -->
+    <!-- Gap -->
+    <div class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
+        
+        <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
+        <!-- <div class="relative flex justify-center aspect-[8/9.8] md:aspect-[8/7.25] py-6 w-full lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden"> -->
+        <div class="relative sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden">
+            <img id="monstera-house" src="dist/img/monstera.png" alt="Profile" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-full h-full">
+            <button id="left-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                <img src="dist/img/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+            </button>
+            <button id="right-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                <img src="dist/img/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+            </button>
+        </div>
+        <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
+        <div class="px-4 sm:px-0 lg:h-full gap-y-6 lg:gap-12 flex flex-col lg:items-center lg:justify-center sm:w-[80%] lg:w-[60%] xl:w-[70%] overflow-hidden max-w-full">
+            
+            <!-- Judul & Deskripsi -->
+            <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
+                <span class="block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                    MONSTERA
+                </span>
+                <div class="block md:flex md:flex-row md:justify-center lg:block">
+                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                        Rumah satu lantai yang sangat populer di Grand Harvest. Rumah dengan low cost maintenance yang cocok untuk kamu dengan gaya hidup compact dan minimalist.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Spesifikasi (Dibawah <p>) -->
+            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
+                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                    <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT MONSTERA</span>
+                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">SATU LANTAI</span>
+                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">5 X 12</span>
+                </div>
+    
+                <!-- Tabel (Dibawah div spesifikasi) -->
+                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
+                    <table class="table-fixed min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                        <thead>
+                            <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
+                                <th class="px-2 break-words">Luas Tanah</th>
+                                <th class="px-2 break-words">Luas Bangunan</th>
+                                <th class="px-2 break-words">Kamar Tidur</th>
+                                <th class="px-2 break-words">Kamar Mandi</th>
+                                <th class="px-2 break-words">Parkir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-2 border-primary-500 text-primary-500 bg-shade-white">
+                                <td class="px-2 break-words">60</td>
+                                <td class="px-2 break-words">30</td>
+                                <td class="px-2 break-words">2</td>
+                                <td class="px-2 break-words">1</td>
+                                <td class="px-2 break-words">1 Mobil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gap -->
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------ -->
+    <div class="px-4 w-full bg-shade-white border-primary-500 pb-6 border-4 flex flex-col gap-y-8 sm:flex-row sm:flex-wrap justify-evenly md:justify-center lg:px-8">
+        <!-- Button -->
+    <div class="flex justify-evenly lg:justify-center gap-4 lg:gap-8 w-full overflow-x-auto px-4 pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4">
+        <button type="button" id="rumah" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500 bg-shade-white text-primary-500 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            EVEREST
+        </button>
+        
+        <button type="button" id="fasilitas" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500 text-primary-500 bg-shade-white hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            MONSTERA
+        </button>
+        
+        <button type="button" id="are" class="flex-shrink-0 min-w-[30%] lg:min-w-[26%] px-4 py-1 border-4 border-primary-500 text-neutral-50 bg-primary-500 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </button>
+    </div>
+    <!-- button -->
+    <!-- Gap -->
+    <div class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
+        
+        <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
+        <!-- <div class="relative flex justify-center aspect-[8/9.8] md:aspect-[8/7.25] py-6 w-full lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden"> -->
+        <div class="relative sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden">
+            <img id="are-house" src="dist/img/are.png" alt="Profile" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-full h-full">
+            <button id="left-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                <img src="dist/img/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+            </button>
+            <button id="right-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                <img src="dist/img/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+            </button>
+        </div>
+        <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
+        <div class="px-4 sm:px-0 lg:h-full gap-y-6 lg:gap-12 flex flex-col lg:items-center lg:justify-center sm:w-[80%] lg:w-[60%] xl:w-[70%] overflow-hidden max-w-full">
+            
+            <!-- Judul & Deskripsi -->
+            <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
+                <span class="block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                    ARE
+                </span>
+                <div class="block md:flex md:flex-row md:justify-center lg:block">
+                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                        Rumah dengan 1 kamar, cocok untuk millennial yang produktif atau pasangan muda.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Spesifikasi (Dibawah <p>) -->
+            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
+                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                    <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT ARE</span>
+                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">SATU LANTAI</span>
+                    <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">5 X 12</span>
+                </div>
+    
+                <!-- Tabel (Dibawah div spesifikasi) -->
+                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
+                    <table class="table-fixed min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                        <thead>
+                            <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
+                                <th class="px-2 break-words">Luas Tanah</th>
+                                <th class="px-2 break-words">Luas Bangunan</th>
+                                <th class="px-2 break-words">Kamar Tidur</th>
+                                <th class="px-2 break-words">Kamar Mandi</th>
+                                <th class="px-2 break-words">Parkir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-2 border-primary-500 text-primary-500 bg-shade-white">
+                                <td class="px-2 break-words">60</td>
+                                <td class="px-2 break-words">25</td>
+                                <td class="px-2 break-words">1</td>
+                                <td class="px-2 break-words">1</td>
+                                <td class="px-2 break-words">1 Mobil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gap -->
+    </div>
+    <!-- --------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="border-2 border-emerald-400 min-h-screen p-12">
+    </section>
+    
+    
+    
+    
+    
+    <div class="h-96 bg-white"></div>
+        
+        <script src="dist/js/script-produk.js"></script>
+    </body>
+</html>
