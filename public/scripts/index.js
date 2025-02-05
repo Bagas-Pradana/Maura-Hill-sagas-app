@@ -5,7 +5,6 @@ const container = document.getElementById("customize");
 container.classList.remove("container");
 // Tambahkan class custom
 
-
 container.classList.add("custom-container");
 const header = document.querySelector("#header");
 const fixedNav = header.offsetTop;
@@ -32,29 +31,37 @@ hamburger.addEventListener("click", function () {
     if (hamburger.classList.contains("hamburger-active")) {
         // Delay untuk menyembunyikan menu
         setTimeout(() => {
-          navMenu.classList.add("hidden");
+            navMenu.classList.add("hidden");
         }, 800); // Durasi delay (ms)
-      } else {
+    } else {
         // Tampilkan menu terlebih dahulu
         navMenu.classList.remove("hidden");
-    
+
         // Lalu tambahkan animasi setelah delay kecil
         setTimeout(() => {
-          hamburger.classList.add("hamburger-active");
+            hamburger.classList.add("hamburger-active");
         }, 1000); // Durasi kecil untuk animasi hamburger
-      }
-      hamburger.classList.toggle("hamburger-active");
+    }
+    hamburger.classList.toggle("hamburger-active");
 });
 
 // Text Animation
-const textTemplate = ['Mimpi Rumah Dimulai', 'Dapatkan Kenyamanan', 'Pesan Sekarang Juga'];
-const textTemplute = ['Masa Depan Menanti', 'Exclusive Hanya Disini', 'Penawaran Terbatas'];
+const textTemplate = [
+    "Mimpi Rumah Dimulai",
+    "Dapatkan Kenyamanan",
+    "Pesan Sekarang Juga",
+];
+const textTemplute = [
+    "Masa Depan Menanti",
+    "Exclusive Hanya Disini",
+    "Penawaran Terbatas",
+];
 // const textelement = document.getElementById("form-title");
 let index = 0;
-function changeText(){
-  document.getElementById('form-title').textContent = textTemplate[index];
-  document.getElementById('form-title2').textContent = textTemplute[index];
-  index = (index + 1) % textTemplate.length;
-  index = (index + 1) % textTemplute.length;
-};
+function changeText() {
+    document.getElementById("form-title").textContent = textTemplate[index];
+    document.getElementById("form-title2").textContent = textTemplute[index];
+    index = (index + 1) % textTemplate.length;
+    index = (index + 1) % textTemplute.length;
+}
 setInterval(changeText, 8000);
