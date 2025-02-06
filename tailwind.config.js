@@ -70,6 +70,7 @@ module.exports = {
                 headline3: "48px",
                 headline4: "32px",
                 headline5: "24px",
+                headline6: "20px",
                 body1: "16px",
                 body2: "14px",
                 caption: "12px",
