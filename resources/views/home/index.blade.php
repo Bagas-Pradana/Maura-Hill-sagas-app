@@ -8,7 +8,7 @@
         <div class="relative font-poppins font-semibold text-headline5 min-w-7xl bg-transparent sm:bg-sky-200 sm:text-2xl lg:text-headline4 md:min-w-96 md:mx-0 lg:w-full min-h-screen">
             <span id="form-title" class="absolute top-[5.75rem] sm:top-[5.75rem] lg:top-[7.3rem] right-14 sm:right-44 text-primary-500 transition-opacity animate-fadeOutIn">Selamat Datang</span>
             <span id="form-title2" class="absolute top-[8rem] lg:top-[10.5rem] right-4 text-primary-500 transition-opacity animate-fadeOutIn">Di Rumah Idaman</span>
-            <img src="Img/background_langit.png" alt="Profile" class="shadow-slate-400 object-right object-cover sm:w-full lg:max-w-full min-h-screen">
+            <img src="Img/home/background_langit.png" alt="Profile" class="shadow-slate-400 object-right object-cover sm:w-full lg:max-w-full min-h-screen">
             <div class="absolute mx-auto bottom-4 md:bottom-28 lg:bottom-48 left-1/2 -translate-x-1/2 items-center justify-center animate-custom-pulse">
                 <a href="#banner" class=" text-neutral-50 mx-auto block font-poppins text-headline4 -rotate-90 font-semibold">⟨</a>
             </div>
@@ -19,9 +19,9 @@
     <section id="banner" class="pt-24 pb-12 min-h-screen flex items-center relative lg:pb-24">
         <div class="relative p-8 flex flex-col gap-y-8 min-h-full justify-center lg:justify-between items-center text-headline4 md:text-headline3 sm:text-center sm:px-20 lg:flex-row lg:px-12 lg:p-0">
             <div class="aspect-[6/5] max-w-[425px] lg:max-w-none w-full lg:w-[40%] lg:order-last shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-xl overflow-hidden">
-                <img src="Img/house-1.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                <img src="Img/home/house-1.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
             </div>
-            <!-- <img src="Img/house-1.png" alt="Profile" class="rounded-xl aspect-[6/5] max-w-[400px] lg:max-w-max w-[45%] object-cover object-bottom lg:order-last sm:animate-veryslow-bounce"> -->
+            <!-- <img src="Img/home/house-1.png" alt="Profile" class="rounded-xl aspect-[6/5] max-w-[400px] lg:max-w-max w-[45%] object-cover object-bottom lg:order-last sm:animate-veryslow-bounce"> -->
             <div class="w-full md:w-[80%] lg:w-[45%] flex flex-col gap-y-4">
                 <span class="block font-bold text-slate-800 self-start sm:text-4xl sm:self-auto lg:text-headline3 lg:text-left">
                     Welcome To 
@@ -49,42 +49,42 @@
             <!-- Container untuk card -->
             <div class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-evenly sm:gap-x-6 sm:gap-y-10 px-16 sm:px-10 md:px-12 lg:gap-x-[2.2rem] lg:px-24">
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/row-maura.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
+                    <img src="Img/home/row-maura.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3 class="text-center text-headline5 font-semibold text-neutral-900 md:text-2xl">ROW Jalan 10 Meter</h3>
                         <p class="text-justify text-body2 font-semibold">Kemewahan sebuah kawasan tidak hanya pada sisi produk bangunan saja, kemewahan yang sebenarnya di Grand Harvest adalah kelegaan pada ROW jalan minimum 10 meter. Memungkinkan warga memiliki lebih daripada satu kendaraan tanpa mengganggu kelancaran akses</p>
                     </div>
                 </div>
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/gate-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
+                    <img src="Img/home/gate-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="text-4xl text-headline5 text-center font-semibold text-slate-800 md:text-2xl">One Gate System</h3>
                     <p class="text-justify text-body2 leading-normal font-semibold">Nikmati hunian yang eksklusif dan aman dengan sistem One Gate System, di mana akses keluar-masuk kawasan hanya melalui satu pintu utama yang dijaga oleh petugas keamanan profesional. Sistem ini dirancang untuk memastikan privasi dan keamanan Anda tetap terjaga. </p>
                     </div>
                 </div>
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/cctv-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
+                    <img src="Img/home/cctv-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Security & CCTV 24 Jam</h3>
                     <p class="text-justify text-body2 leading-normal font-semibold">Dilengkapi dengan sistem keamanan 24 jam yang dijaga oleh petugas profesional, didukung oleh teknologi CCTV yang mengawasi setiap sudut kawasan nonstop. Nikmati hidup lebih nyaman dan fokus pada hal-hal penting dalam hidup Anda, karena kami selalu siap menjaga keamanan hunian Anda.</p>
                     </div>
                 </div>
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/map-maura.png" alt="Profile" class="w-[30%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
+                    <img src="Img/home/map-maura.png" alt="Profile" class="w-[30%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Lokasi yang Strategis</h3>
                     <p class="text-justify text-body2 leading-normal font-semibold">Terletak di lokasi yang sangat strategis, memberikan Anda kemudahan akses ke berbagai fasilitas penting. Dekat dengan pusat pendidikan, layanan kesehatan, area perbelanjaan, area industri, dan jalur transportasi utama</p>
                     </div>
                 </div>
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/run-maura.png" alt="Profile" class="mt-6 w-[25%] max-w-[400px] h-auto animate-slow-bounce">
+                    <img src="Img/home/run-maura.png" alt="Profile" class="mt-6 w-[25%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Fasilitas Umum yang Lengkap</h3>
                     <p class="text-justify text-body2 leading-normal font-semibold">Menghadirkan hunian dengan fasilitas umum yang dirancang untuk memenuhi segala kebutuhan Anda dan keluarga. Mulai dari taman bermain anak yang aman, area hijau yang asri untuk bersantai, hingga fasilitas olahraga untuk menjaga kebugaran.</p>
                     </div>
                 </div>
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-around">
-                    <img src="Img/camera-maura.png" alt="Profile" class="mt-6 w-[28%] max-w-[400px] h-auto animate-slow-bounce">
+                    <img src="Img/home/camera-maura.png" alt="Profile" class="mt-6 w-[28%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Instagramable Photo Spot</h3>
                     <p class="text-justify text-body2 leading-normal font-semibold">Abadikan setiap momen indah di Maura Hill dengan berbagai spot foto Instagramable yang dirancang estetik dan modern. Dari taman hijau yang asri hingga area unik dengan desain arsitektur memukau, setiap sudutnya siap menjadi latar sempurna untuk foto-foto Anda.</p>

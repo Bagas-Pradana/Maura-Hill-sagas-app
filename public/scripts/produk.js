@@ -219,9 +219,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Produk EVEREST
 const images = [
-    "dist/img/house.png",
-    "dist/img/layout2-everest.png",
-    "dist/img/layout3-everest.png"
+    "Img/product/house.png",
+    "Img/product/layout2-everest.png",
+    "Img/product/layout3-everest.png"
 ];
   
 let currentIndex = 0; // Indeks gambar saat ini
@@ -258,8 +258,8 @@ leftButton.addEventListener("click", function () {
 
 // Produk Monstera
 const images1 = [
-    "dist/img/monstera.png",
-    "dist/img/layout2-monstera.png",
+    "Img/product/monstera.png",
+    "Img/product/layout2-monstera.png",
 ];
   
 let currentIndex1 = 0; // Indeks gambar saat ini
@@ -296,8 +296,8 @@ leftButton1.addEventListener("click", function () {
 
 // Produk Are
 const images2 = [
-    "dist/img/are.png",
-    "dist/img/layout2-are.png",
+    "Img/product/are.png",
+    "Img/product/layout2-are.png",
 ];
   
 let currentIndex2 = 0; // Indeks gambar saat ini
