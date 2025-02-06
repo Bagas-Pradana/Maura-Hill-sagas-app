@@ -29,10 +29,10 @@
                         Maura Hill
                     </span>
                 </span>
-                <p class="text-justify text-body2 w-full">
+                <p class="text-justify text-body2 font-semibold lg:text-start w-full">
                     Temukan rumah idaman Anda di lingkungan yang nyaman, asri, dan strategis. <span class="text-primary-500">Maura Hill</span> hadir untuk memenuhi kebutuhan hunian keluarga modern dengan desain elegan, fasilitas lengkap, dan akses mudah ke berbagai pusat aktivitas.
                 </p>
-                <p class="hidden sm:block text-body1 font-semibold sm:self-start">A Place Where Do You Feel Alive.</p>
+                <p class="hidden sm:block text-body1 font-bold sm:self-start">A Place Where Do You Feel Alive.</p>
             </div>
         </div>
         <!-- <div class="absolute mx-auto bottom-2 right-1/2 inline-flex items-center justify-center animate-custom-pulse"> -->
@@ -47,47 +47,47 @@
         <div class="border-y-4 py-[6.5rem] font-poppins bg-primary-500 sm:border-0 sm:border-b-4 sm:bg-primary-500">
             <h1 class="mx-auto text-headline4 text-center font-bold text-slate-800 sm:text-[40px] sm:leading-tight md:text-headline3">Kenapa Harus Beli <span class="leading-[3.5rem] text-neutral-50 sm:text-neutral-50 block md:leading-relaxed">di Maura Hill?</span></h1>
             <!-- Container untuk card -->
-            <div class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-between sm:gap-4 sm:gap-y-10 sm:px-6">
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
+            <div class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-evenly sm:gap-x-6 sm:gap-y-10 px-16 sm:px-10 md:px-12 lg:gap-x-[2.2rem] lg:px-24">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
                     <img src="Img/row-maura.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3 class="text-center text-headline5 font-semibold text-neutral-900 md:text-2xl">ROW Jalan 10 Meter</h3>
-                        <p class="text-justify text-body2">Kemewahan sebuah kawasan tidak hanya pada sisi produk bangunan saja, kemewahan yang sebenarnya di Grand Harvest adalah kelegaan pada ROW jalan minimum 10 meter. Memungkinkan warga memiliki lebih daripada satu kendaraan tanpa mengganggu kelancaran akses</p>
+                        <p class="text-justify text-body2 font-semibold">Kemewahan sebuah kawasan tidak hanya pada sisi produk bangunan saja, kemewahan yang sebenarnya di Grand Harvest adalah kelegaan pada ROW jalan minimum 10 meter. Memungkinkan warga memiliki lebih daripada satu kendaraan tanpa mengganggu kelancaran akses</p>
                     </div>
                 </div>
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/gate-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-8 animate-slow-bounce">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
+                    <img src="Img/gate-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="text-4xl text-headline5 text-center font-semibold text-slate-800 md:text-2xl">One Gate System</h3>
-                    <p class="text-justify text-body2 leading-normal">Nikmati hunian yang eksklusif dan aman dengan sistem One Gate System, di mana akses keluar-masuk kawasan hanya melalui satu pintu utama yang dijaga oleh petugas keamanan profesional. Sistem ini dirancang untuk memastikan privasi dan keamanan Anda tetap terjaga. </p>
+                    <p class="text-justify text-body2 leading-normal font-semibold">Nikmati hunian yang eksklusif dan aman dengan sistem One Gate System, di mana akses keluar-masuk kawasan hanya melalui satu pintu utama yang dijaga oleh petugas keamanan profesional. Sistem ini dirancang untuk memastikan privasi dan keamanan Anda tetap terjaga. </p>
                     </div>
                 </div>
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
                     <img src="Img/cctv-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Security & CCTV 24 Jam</h3>
-                    <p class="text-justify text-body2 leading-normal">Dilengkapi dengan sistem keamanan 24 jam yang dijaga oleh petugas profesional, didukung oleh teknologi CCTV yang mengawasi setiap sudut kawasan nonstop. Nikmati hidup lebih nyaman dan fokus pada hal-hal penting dalam hidup Anda, karena kami selalu siap menjaga keamanan hunian Anda.</p>
+                    <p class="text-justify text-body2 leading-normal font-semibold">Dilengkapi dengan sistem keamanan 24 jam yang dijaga oleh petugas profesional, didukung oleh teknologi CCTV yang mengawasi setiap sudut kawasan nonstop. Nikmati hidup lebih nyaman dan fokus pada hal-hal penting dalam hidup Anda, karena kami selalu siap menjaga keamanan hunian Anda.</p>
                     </div>
                 </div>
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/map-maura.png" alt="Profile" class="w-[29%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
+                    <img src="Img/map-maura.png" alt="Profile" class="w-[30%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Lokasi yang Strategis</h3>
-                    <p class="text-justify text-body2 leading-normal">Terletak di lokasi yang sangat strategis, memberikan Anda kemudahan akses ke berbagai fasilitas penting. Dekat dengan pusat pendidikan, layanan kesehatan, area perbelanjaan, area industri, dan jalur transportasi utama</p>
+                    <p class="text-justify text-body2 leading-normal font-semibold">Terletak di lokasi yang sangat strategis, memberikan Anda kemudahan akses ke berbagai fasilitas penting. Dekat dengan pusat pendidikan, layanan kesehatan, area perbelanjaan, area industri, dan jalur transportasi utama</p>
                     </div>
                 </div>
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
                     <img src="Img/run-maura.png" alt="Profile" class="mt-6 w-[25%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Fasilitas Umum yang Lengkap</h3>
-                    <p class="text-justify text-body2 leading-normal">Menghadirkan hunian dengan fasilitas umum yang dirancang untuk memenuhi segala kebutuhan Anda dan keluarga. Mulai dari taman bermain anak yang aman, area hijau yang asri untuk bersantai, hingga fasilitas olahraga untuk menjaga kebugaran.</p>
+                    <p class="text-justify text-body2 leading-normal font-semibold">Menghadirkan hunian dengan fasilitas umum yang dirancang untuk memenuhi segala kebutuhan Anda dan keluarga. Mulai dari taman bermain anak yang aman, area hijau yang asri untuk bersantai, hingga fasilitas olahraga untuk menjaga kebugaran.</p>
                     </div>
                 </div>
-                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[48%] lg:w-[31%] flex flex-col gap-y-8 items-center">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-around">
                     <img src="Img/camera-maura.png" alt="Profile" class="mt-6 w-[28%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                     <h3 class="mx-auto text-4xl text-headline5 text-center font-semibold text-slate-800 leading-relaxed md:text-2xl">Instagramable Photo Spot</h3>
-                    <p class="text-justify text-body2 leading-normal">Abadikan setiap momen indah di Maura Hill dengan berbagai spot foto Instagramable yang dirancang estetik dan modern. Dari taman hijau yang asri hingga area unik dengan desain arsitektur memukau, setiap sudutnya siap menjadi latar sempurna untuk foto-foto Anda.</p>
+                    <p class="text-justify text-body2 leading-normal font-semibold">Abadikan setiap momen indah di Maura Hill dengan berbagai spot foto Instagramable yang dirancang estetik dan modern. Dari taman hijau yang asri hingga area unik dengan desain arsitektur memukau, setiap sudutnya siap menjadi latar sempurna untuk foto-foto Anda.</p>
                     </div>
                 </div>
             </div>
