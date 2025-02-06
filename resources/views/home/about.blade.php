@@ -39,3 +39,7 @@
         <img src="{{ asset('Img/about/master-plan.png') }}" alt="Master Plan" class="w-full object-cover object-bottom">
     </section>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('scripts/index.js') }}"></script>
+@endpush
