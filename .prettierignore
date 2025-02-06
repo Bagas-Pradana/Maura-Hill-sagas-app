@@ -1,0 +1,6 @@
+# Ignore everything
+*
+# Except resources/views
+!resources/
+!resources/views/
+!resources/views/**/*
