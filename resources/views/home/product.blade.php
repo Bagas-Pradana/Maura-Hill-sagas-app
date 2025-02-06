@@ -7,7 +7,7 @@
     {{--  Hero Section --}}
     <section id="hero" class="relative w-full">
         <div class="absoulte bg-shade-white min-h-[75vh] flex flex-row items-center justify-center">
-            <img src="{{ asset('Img/banner-product.png') }}" alt="Profile" class="absolute opacity-20 bg-transparent object-cover h-full w-full mb-24 -z-0">
+            <img src="{{ asset('Img/banner-product.png') }}" alt="maura-hill" class="absolute opacity-20 bg-transparent object-cover h-full w-full mb-24 -z-0">
             <span class="absolute text-primary-500 font-bold font-poppins text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Produk Kami</span>
             <div class="absolute flex flex-wrap -bottom-[5.3rem] left-1/2 -translate-x-1/2 mb-24 w-full justify-center">
                 <button type="button" id="rumah" class="py-2 px-12 text-headline6 sm:text-headline5 font-bold text-primary-500 border-4 border-primary-500 bg-neutral-200 sm:px-[4rem] md:py-1 md:px-[6.5rem] md:text-[30px] lg:text-[34px] lg:py-2 lg:px-[7rem] xl:px-36 xl:text-[38px] hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">RUMAH</button>
@@ -21,7 +21,7 @@
      <section id="banner-rumah-maura" class="bg-shade-white flex items-center min-h-screen relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
         <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
             <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] lg:order-first shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg overflow-hidden">
-                <img src="Img/product/maura-house-1.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                <img src="{{ asset('Img/product/maura-house-1.png') }}" alt="maura-house" class=" object-cover object-bottom w-full h-full">
             </div>
             <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                 <span class="block font-bold font-poppins text-slate-800 self-center lg:self-end text-headline3 text-center lg:text-end">
@@ -65,12 +65,12 @@
                         
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="everest-house" src="Img/product/house.png" alt="Profile" class="shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom w-fit h-full">
+                            <img id="everest-house" src="{{ asset('Img/product/house.png') }}" alt="Everest" class="shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom w-fit h-full">
                             <button id="left-button" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="Img/product/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="Img/product/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -129,12 +129,12 @@
                         
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="monstera-house" src="Img/product/monstera.png" alt="Profile" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
+                            <img id="monstera-house" src="{{ asset('Img/product/monstera.png') }}" alt="Monstera" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
                             <button id="left-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="Img/product/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="Img/product/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -192,12 +192,12 @@
                     <div id="are-index" class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="are-house" src="Img/product/are.png" alt="Profile" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
+                            <img id="are-house" src="{{ asset('Img/product/are.png') }}" alt="Are" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
                             <button id="left-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="Img/product/arrow-left.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="Img/product/arrow-right.png" alt="Profile" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -261,7 +261,7 @@
     <section id="banner-masjid" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="Img/product/maura-masjid.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/maura-masjid.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline3 lg:self-start">
@@ -278,7 +278,7 @@
     <section id="wall-climbing" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="Img/product/wall-climbing.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/wall-climbing.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline3 lg:self-end">
@@ -295,7 +295,7 @@
     <section id="kids-playground" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="Img/product/kids-playground.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/kids-playground.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="font-poppins block pb-2 text-primary-500 font-bold leading-12 self-center text-headline3 lg:self-start">
@@ -312,7 +312,7 @@
     <section id="outdoor-gym" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="Img/product/outdoor-gym.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/outdoor-gym.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline3 lg:self-end">
@@ -329,7 +329,7 @@
     <section id="jogging-track" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="Img/product/jogging-track.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/jogging-track.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline3 lg:self-start">
@@ -347,7 +347,7 @@
     <section id="barbeque" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="Img/product/barbeque.png" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('Img/product/barbeque.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 font-poppins text-primary-500 font-bold leading-12 self-center text-headline3 lg:self-end">

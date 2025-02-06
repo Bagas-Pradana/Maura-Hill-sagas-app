@@ -3,7 +3,7 @@
         <div class="w-full flex items-center justify-between relative">
             <div class="px-0">
                 <a  href="#" class="font-bold text-lg text-primary block py-3">
-                    <img class="" src="Img/logo-maura.png" alt="Logo" width="100"/>
+                    <img class="" src="{{ asset('Img/logo-maura.png') }}" alt="Logo" width="100"/>
                 </a>
             </div>
             <div class="flex items-center px-0 lg:w-[60%] xl:w-2/3">
