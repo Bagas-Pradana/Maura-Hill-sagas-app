@@ -13,7 +13,7 @@
             <span id="form-title2"
                 class="absolute top-[8rem] lg:top-[10.5rem] right-4 text-primary-500 transition-opacity animate-fadeOutIn">Di
                 Rumah Idaman</span>
-            <img src="Img/home/background_langit.png" alt="Profile"
+            <img src="{{ asset('images/home/background_langit.png') }}" alt="Profile"
                 class="shadow-slate-400 object-right object-cover sm:w-full lg:max-w-full min-h-screen">
             <div
                 class="absolute mx-auto bottom-4 md:bottom-28 lg:bottom-48 left-1/2 -translate-x-1/2 items-center justify-center animate-custom-pulse">
@@ -29,10 +29,10 @@
             class="relative p-8 flex flex-col gap-y-8 min-h-full justify-center lg:justify-between items-center text-headline4 md:text-headline3 sm:text-center sm:px-20 lg:flex-row lg:px-12 lg:p-0">
             <div
                 class="aspect-[6/5] max-w-[425px] lg:max-w-none w-full lg:w-[40%] lg:order-last shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-xl overflow-hidden">
-                <img src="Img/home/house-1.png" alt="Profile"
+                <img src="{{ asset('images/home/house-1') }}.png" alt="Profile"
                     class=" object-cover object-bottom w-full h-full">
             </div>
-            <!-- <img src="Img/home/house-1.png" alt="Profile" class="rounded-xl aspect-[6/5] max-w-[400px] lg:max-w-max w-[45%] object-cover object-bottom lg:order-last sm:animate-veryslow-bounce"> -->
+            <!-- <img src="{{ asset('images/home/house-1') }}.png" alt="Profile" class="rounded-xl aspect-[6/5] max-w-[400px] lg:max-w-max w-[45%] object-cover object-bottom lg:order-last sm:animate-veryslow-bounce"> -->
             <div class="w-full md:w-[80%] lg:w-[45%] flex flex-col gap-y-4">
                 <span
                     class="block font-bold text-slate-800 self-start sm:text-4xl sm:self-auto lg:text-headline3 lg:text-left">
@@ -72,7 +72,7 @@
             <!-- Container untuk card -->
             <div class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-evenly sm:gap-x-6 sm:gap-y-10 px-8 md:px-12 lg:gap-x-[2.2rem] lg:px-24">
                 <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/home/row-maura.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
+                    <img src="{{ asset('images/home/row-maura') }}.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
                             class="text-center text-headline5 font-semibold text-neutral-900 md:text-2xl">
@@ -85,7 +85,7 @@
                 </div>
                 <div
                     class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/home/gate-maura.png" alt="Profile"
+                    <img src="{{ asset('images/home/gate-maura') }}.png" alt="Profile"
                         class="w-[29%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
@@ -100,7 +100,7 @@
                 </div>
                 <div
                     class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/home/cctv-maura.png" alt="Profile"
+                    <img src="{{ asset('images/home/cctv-maura') }}.png" alt="Profile"
                         class="w-[29%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
@@ -115,7 +115,7 @@
                 </div>
                 <div
                     class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/home/map-maura.png" alt="Profile"
+                    <img src="{{ asset('images/home/map-maura') }}.png" alt="Profile"
                         class="w-[30%] max-w-[400px] h-auto mt-4 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
@@ -129,7 +129,7 @@
                 </div>
                 <div
                     class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center">
-                    <img src="Img/home/run-maura.png" alt="Profile"
+                    <img src="{{ asset('images/home/run-maura') }}.png" alt="Profile"
                         class="mt-6 w-[25%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
@@ -143,7 +143,7 @@
                 </div>
                 <div
                     class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-around">
-                    <img src="Img/home/camera-maura.png" alt="Profile"
+                    <img src="{{ asset('images/home/camera-maura') }}.png" alt="Profile"
                         class="mt-6 w-[28%] max-w-[400px] h-auto animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3

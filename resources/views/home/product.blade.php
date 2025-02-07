@@ -7,7 +7,7 @@
     {{--  Hero Section --}}
     <section id="hero" class="relative w-full">
         <div class="bg-shade-white min-h-[75vh] flex flex-row items-center justify-center">
-            <img src="{{ asset('Img/banner-product.png') }}" alt="maura-hill" class="absolute opacity-15 bg-transparent object-cover h-full w-full mb-24">
+            <img src="{{ asset('images/banner-product.png') }}" alt="maura-hill" class="absolute opacity-15 bg-transparent object-cover h-full w-full mb-24">
             <span class="absolute text-primary-500 font-bold font-poppins text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Produk Kami</span>
             <div class="absolute flex flex-wrap -bottom-[4.75rem] md:-bottom-[5rem] lg:-bottom-[5.3rem] left-1/2 -translate-x-1/2 mb-24 w-full justify-center">
                 <button type="button" id="rumah" class="py-1 font-bold text-primary-500 border-l-4 border-y-4 border-primary-500 bg-neutral-200 min-w-max w-[40%] sm:w-1/3 lg:w-1/3 md:text-[30px] text-headline6 sm:text-headline5 lg:text-[34px] xl:text-headline3 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">RUMAH</button>
@@ -26,7 +26,7 @@
             class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
             <div
                 class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] lg:order-first shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg overflow-hidden">
-                <img src="{{ asset('Img/product/maura-house-1.png') }}" alt="maura-house"
+                <img src="{{ asset('images/product/maura-house-1.png') }}" alt="maura-house"
                     class=" object-cover object-bottom w-full h-full">
             </div>
             <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
@@ -36,7 +36,7 @@
                         Maura Hill
                     </span>
                 </span>
-                <p class="font-poppins font-bold text-justify text-body2 w-full lg:text-end">
+                <p class="font-poppins font-seminbold text-justify text-body2 w-full lg:text-end">
                     Rasakan pengalaman tinggal yang berbeda di <span class="text-primary-500">Maura
                         Hill</span> dengan desain rumah yang memadukan gaya Scandinavian minimalis dan
                     nuansa hangat ala Villa Bali. Perpaduan ini menghadirkan suasana yang elegan,
@@ -69,35 +69,18 @@
                             ARE
                         </button>
                     </div>
-                    {{-- <div class="pb-2 flex justify-between gap-x-4 lg:gap-x-8 w-full sm:w-4/5 lg:w-full overflow-x-auto pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4 px-0">
-                        <button id="everest-button" type="button" id="rumah" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap">
-                            EVEREST
-                        </button>
-                        
-                        <button id="monstera-button" type="button" id="fasilitas" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 text-primary-500 border-4 border-primary-500 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
-                            MONSTERA
-                        </button>
-                        
-                        <button id="are-button" type="button" id="are" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 text-primary-500 border-4 border-primary-500  hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
-                            ARE
-                        </button>
-                        <button id="are-button" type="button" id="are" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 text-primary-500 border-4 border-primary-500  hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
-                            ARE
-                        </button>
-                    </div> --}}
-                    <!-- button -->
 
                     <!-- Everest Card -->
                     <div id="everest-index" class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
                         
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
-                        <div class="relative pb-2 sm:static flex justify-center lg:justify-start aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="everest-house" src="{{ asset('Img/product/house.png') }}" alt="Everest" class="shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom w-fit h-full">
+                        <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
+                            <img id="everest-house" src="{{ asset('images/product/house.png') }}" alt="Everest" class="shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom w-fit h-full">
                             <button id="left-button" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -124,7 +107,7 @@
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
                                 <div class="flex sm:justify-around lg:justify-normal overflow-auto w-full max-w-full pb-2">
-                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
@@ -148,19 +131,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Everest Card-->
+                    <!-- Everest  End-->
 
                     <!-- Monstera Card -->
                     <div id="monstera-index" class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
                         
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="monstera-house" src="{{ asset('Img/product/monstera.png') }}" alt="Monstera" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
+                            <img id="monstera-house" src="{{ asset('images/product/monstera.png') }}" alt="Monstera" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
                             <button id="left-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -187,8 +170,8 @@
                                 </div>
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
-                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
-                                    <table class="table-fixed min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full pb-2">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
@@ -212,18 +195,18 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Monstera Card -->
+                    <!-- Monstera Card End -->
                     
                     <!-- Are Card -->
                     <div id="are-index" class="bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-12 lg:p-0 overflow-hidden">
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
-                            <img id="are-house" src="{{ asset('Img/product/are.png') }}" alt="Are" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
+                            <img id="are-house" src="{{ asset('images/product/are.png') }}" alt="Are" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
                             <button id="left-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
-                                <img src="{{ asset('Img/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                             <button id="right-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
-                                <img src="{{ asset('Img/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
+                                <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
                         <!-- Wrapper kanan (Text, Spesifikasi, dan Table) -->
@@ -250,8 +233,8 @@
                                 </div>
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
-                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
-                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full pb-2">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
@@ -275,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Are Card -->
+                    <!-- Are Card End -->
                 </div>
             </div>
     </section>
@@ -286,7 +269,7 @@
     <section id="banner-masjid" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="{{ asset('Img/product/maura-masjid.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/maura-masjid.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
@@ -303,7 +286,7 @@
     <section id="wall-climbing" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="{{ asset('Img/product/wall-climbing.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/wall-climbing.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">
@@ -320,7 +303,7 @@
     <section id="kids-playground" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="{{ asset('Img/product/kids-playground.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/kids-playground.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="font-poppins block pb-2 text-primary-500 font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
@@ -337,7 +320,7 @@
     <section id="outdoor-gym" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="{{ asset('Img/product/outdoor-gym.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/outdoor-gym.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">
@@ -354,7 +337,7 @@
     <section id="jogging-track" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-last overflow-hidden">
-                    <img src="{{ asset('Img/product/jogging-track.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/jogging-track.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
@@ -372,7 +355,7 @@
     <section id="barbeque" class="bg-shade-white min-h-screen flex items-center relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
             <div class="flex flex-col gap-y-8 min-h-full justify-center lg:flex-row lg:justify-between items-center">
                 <div class="max-w-[425px] lg:max-w-none w-full lg:w-[50%] shadow-lg shadow-slate-800 sm:animate-veryslow-bounce rounded-lg lg:order-first overflow-hidden">
-                    <img src="{{ asset('Img/product/barbeque.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
+                    <img src="{{ asset('images/product/barbeque.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
                         <span class="block pb-2 font-poppins text-primary-500 font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">

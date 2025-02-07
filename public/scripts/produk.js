@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fungsi Swipe Left / Right untuk Gambar Produk
     const images = [
-        "Img/product/house.png",
-        "Img/product/layout2-everest.png",
-        "Img/product/layout3-everest.png"
+        "images/product/house.png",
+        "images/product/layout2-everest.png",
+        "images/product/layout3-everest.png"
     ];
 
     let currentIndex = 0;
@@ -106,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Produk Monstera
     const images1 = [
-        "Img/product/monstera.png",
-        "Img/product/layout2-monstera.png",
+        "images/product/monstera.png",
+        "images/product/layout2-monstera.png",
     ];
 
     let currentIndex1 = 0;
@@ -139,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Produk Are
     const images2 = [
-        "Img/product/are.png",
-        "Img/product/layout2-are.png",
+        "images/product/are.png",
+        "images/product/layout2-are.png",
     ];
 
     let currentIndex2 = 0;

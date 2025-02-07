@@ -4,7 +4,7 @@
         <div class="w-full flex items-center justify-between relative">
             <div class="px-0">
                 <a href="#" class="font-bold text-lg text-primary block py-3">
-                    <img class="" src="{{ asset('Img/logo-maura.png') }}" alt="Logo"
+                    <img class="" src="{{ asset('images/logo-maura.png') }}" alt="Logo"
                         width="100" />
                 </a>
             </div>

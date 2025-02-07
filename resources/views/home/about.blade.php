@@ -6,7 +6,7 @@
     <!-- Hero Section -->
     <section id="hero" class="relative w-full">
         <div class="bg-shade-white min-h-[75vh] flex flex-row items-center justify-center">
-            <img src="{{ asset('Img/banner-product.png') }}" alt="Profile" class="absolute opacity-15 bg-transparent object-cover h-full w-full">
+            <img src="{{ asset('images/banner-product.png') }}" alt="Profile" class="absolute opacity-15 bg-transparent object-cover h-full w-full">
             <span class="absolute text-primary-500 font-bold text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Tentang Kami</span>
         </div>
     </section>
@@ -18,7 +18,7 @@
             class="flex flex-col lg:flex-row gap-y-8 min-h-full justify-center lg:justify-between items-center">
             <div
                 class="max-w-[425px] lg:max-w-none lg:w-[50%] shadow-xl sm:animate-veryslow-bounce rounded-lg overflow-hidden">
-                <img src="{{ asset('Img/about/rumah.png') }}" alt="Profile"
+                <img src="{{ asset('images/about/rumah.png') }}" alt="Profile"
                     class="object-cover w-full h-full">
             </div>
             <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
@@ -58,7 +58,7 @@
                 kawasan ini dipikirkan dengan matang, mulai dari desain rumah yang elegan hingga
                 fasilitas umum yang lengkap, untuk memenuhi kebutuhan hidup modern Anda.</span>
         </div>
-        <img src="{{ asset('Img/about/master-plan.png') }}" alt="Master Plan"
+        <img src="{{ asset('images/about/master-plan.png') }}" alt="Master Plan"
             class="w-full object-cover object-bottom">
     </section>
 @endsection
