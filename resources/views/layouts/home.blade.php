@@ -22,6 +22,7 @@
     @include('layouts.partials.footer')
     <!-- End Footer -->
     <!-- Script -->
+    <script src="{{ asset('scripts/index.js') }}"></script>
     @stack('scripts')
     <!-- End Script -->
 </body>

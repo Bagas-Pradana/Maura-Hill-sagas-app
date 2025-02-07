@@ -16,7 +16,3 @@
     </section>
     {{-- End Hero Section --}}
 @endsection
-
-@push('scripts')
-    <script src="{{ asset('scripts/index.js') }}"></script>
-@endpush

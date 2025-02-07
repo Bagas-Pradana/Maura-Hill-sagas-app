@@ -1,44 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Navbar Responsively
-    const container = document.getElementById("customize");
-    container.classList.remove("container");
-    container.classList.add("custom-container");
-
-    const header = document.querySelector("#header");
-    const fixedNav = header.offsetTop;
-
-    if (window.pageYOffset > fixedNav) {
-        header.classList.add("navbar-fixed");
-    } else {
-        header.classList.remove("navbar-fixed");
-    }
-
-    window.onscroll = function () {
-        if (window.pageYOffset > fixedNav) {
-            header.classList.add("navbar-fixed");
-        } else {
-            header.classList.remove("navbar-fixed");
-        }
-    };
-
-    // Hamburger Menu
-    const hamburger = document.querySelector("#hamburger");
-    const navMenu = document.querySelector("#nav-menu");
-    hamburger.addEventListener("click", function () {
-        navMenu.classList.toggle("hidden");
-        if (hamburger.classList.contains("hamburger-active")) {
-            setTimeout(() => {
-                navMenu.classList.add("hidden");
-            }, 800);
-        } else {
-            navMenu.classList.remove("hidden");
-            setTimeout(() => {
-                hamburger.classList.add("hamburger-active");
-            }, 1000);
-        }
-        hamburger.classList.toggle("hamburger-active");
-    });
-
     // Fungsi Menjalankan Button untuk Fitur RUMAH dan Fasilitas
     const rumahBtn = document.getElementById("rumah");
     const fasilitasBtn = document.getElementById("fasilitas");

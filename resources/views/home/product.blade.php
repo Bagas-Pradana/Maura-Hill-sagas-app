@@ -10,14 +10,16 @@
             <img src="{{ asset('Img/banner-product.png') }}" alt="maura-hill" class="absolute opacity-15 bg-transparent object-cover h-full w-full mb-24">
             <span class="absolute text-primary-500 font-bold font-poppins text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Produk Kami</span>
             <div class="absolute flex flex-wrap -bottom-[4.75rem] md:-bottom-[5rem] lg:-bottom-[5.3rem] left-1/2 -translate-x-1/2 mb-24 w-full justify-center">
-                <button type="button" id="rumah" class="py-2 px-12 text-headline6 sm:text-headline5 font-bold text-primary-500 border-4 border-primary-500 bg-neutral-200 min-w-max w-[35%] sm:px-[4rem] md:py-1 md:px-[6.5rem] md:text-[30px] lg:text-[34px] lg:py-2 lg:px-[7rem] xl:px-36 xl:text-[38px] hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">RUMAH</button>
-                <button type="button" id="fasilitas" class="py-2 px-10 text-headline6 sm:text-headline5 font-bold text-primary-500 border-r-4 border-y-4 border-primary-500 min-w-max w-[35%] bg-neutral-200 sm:px-[4rem] md:py-1 md:px-[6.5rem] md:text-[30px] lg:text-[34px] lg:py-2 lg:px-[7rem] xl:text-[38px] xl:px-36 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">FASILITAS</button>
+                <button type="button" id="rumah" class="py-1 font-bold text-primary-500 border-l-4 border-y-4 border-primary-500 bg-neutral-200 min-w-max w-[40%] sm:w-1/3 lg:w-1/3 md:text-[30px] text-headline6 sm:text-headline5 lg:text-[34px] xl:text-headline3 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">RUMAH</button>
+                <button type="button" id="fasilitas" class="py-1 font-bold text-primary-500 border-r-4 border-y-4 border-primary-500 bg-neutral-200 min-w-max w-[40%] sm:w-1/3 lg:w-1/3 md:text-[30px] text-headline6 sm:text-headline5 lg:text-[34px] xl:text-headline3 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 whitespace-nowrap">FASILITAS</button>
             </div>
         </div>
     </section>
     {{-- End Hero Section --}}
 
     <!-- Banner Section -->
+
+
     <section id="banner-rumah-maura"
         class="bg-shade-white flex items-center min-h-screen relative px-10 sm:px-12 md:px-16 lg:px-20 py-20">
         <div
@@ -28,7 +30,7 @@
                     class=" object-cover object-bottom w-full h-full">
             </div>
             <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                <span class="block font-bold font-poppins text-slate-800 self-start lg:self-end text-headline4 lg:text-end">
+                <span class="block font-bold font-poppins text-slate-800 self-start lg:self-end text-headline4 lg:text-headline3 lg:text-end">
                     Rumah di 
                     <span class="block pb-2 text-primary-500 font-bold lg:pb-0 leading-12">
                         Maura Hill
@@ -47,8 +49,8 @@
 
     <!-- --------------------------------------------------------------------------------------------------------HOUSE SECTION--------------------------------------------------------------------------- -->
      <!-- Content Section-->
-    <section id="house-content" class="min-h-screen px-10 sm:px-12 md:px-16 lg:px-20 sm:py-16">
-            <div class="relative bg-neutral-200 flex min-h-full justify-center items-center text-headline4 md:text-headline3 sm:text-center">
+    <section id="house-content" class="bg-shade-white sm:bg-neutral-200 min-h-screen px-10 sm:px-12 md:px-16 lg:px-20 sm:py-16">
+            <div class="relative bg-shade-white flex min-h-full justify-center items-center text-headline4 md:text-headline3 sm:text-center">
                 <div class="w-full bg-shade-white border-primary-500 pb-6 sm:border-[3.5px] flex flex-col gap-y-8 sm:flex-row sm:flex-wrap justify-evenly md:justify-center lg:px-8">
                     <!-- Button -->
                     <div class="pb-2 flex justify-between gap-x-4 lg:gap-x-8 w-full sm:w-4/5 lg:w-full overflow-x-auto pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4 px-0">
@@ -105,7 +107,7 @@
                                 </div>
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
-                                <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full">
+                                <div class="flex sm:justify-around lg:justify-normal overflow-auto w-full max-w-full pb-2">
                                     <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[40rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
@@ -271,7 +273,7 @@
                     <img src="{{ asset('Img/product/maura-masjid.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline4 lg:self-start">
+                        <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
                             MASJID
                         </span>
                     <p class="font-poppins font-bold text-justify text-body2 w-full lg:text-start">
@@ -288,7 +290,7 @@
                     <img src="{{ asset('Img/product/wall-climbing.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline4 lg:self-end">
+                        <span class="block pb-2 text-primary-500 font-bold font-poppins leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">
                             WALL CLIMBING
                         </span>
                     <p class=" font-poppins font-bold text-justify text-body2 w-full lg:text-end">
@@ -305,7 +307,7 @@
                     <img src="{{ asset('Img/product/kids-playground.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="font-poppins block pb-2 text-primary-500 font-bold leading-12 self-center text-headline4 lg:self-start">
+                        <span class="font-poppins block pb-2 text-primary-500 font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
                             KIDS PLAYGROUND
                         </span>
                     <p class="font-poppins font-bold text-justify text-body2 w-full lg:text-start">
@@ -322,7 +324,7 @@
                     <img src="{{ asset('Img/product/outdoor-gym.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline4 lg:self-end">
+                        <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">
                             OUTDOOR GYM
                         </span>
                     <p class="font-bold font-poppins text-justify text-body2 w-full lg:text-end">
@@ -339,7 +341,7 @@
                     <img src="{{ asset('Img/product/jogging-track.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline4 lg:self-start">
+                        <span class="block pb-2 text-primary-500 font-poppins font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-start">
                             JOGGING TRACK
                         </span>
                     <p class="font-poppins font-bold text-justify text-body2 w-full lg:text-start">
@@ -357,7 +359,7 @@
                     <img src="{{ asset('Img/product/barbeque.png') }}" alt="Profile" class=" object-cover object-bottom w-full h-full">
                 </div>
                 <div class="w-full md:w-[80%] lg:w-[40%] flex flex-col gap-y-4 lg:gap-y-8">
-                        <span class="block pb-2 font-poppins text-primary-500 font-bold leading-12 self-center text-headline4 lg:self-end">
+                        <span class="block pb-2 font-poppins text-primary-500 font-bold leading-12 self-center text-headline5 sm:text-headline4 lg:self-end">
                             BARBEQUE
                         </span>
                     <p class="font-poppins font-bold text-justify text-body2 w-full lg:text-end">
