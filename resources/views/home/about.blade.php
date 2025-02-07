@@ -6,11 +6,8 @@
     <!-- Hero Section -->
     <section id="hero" class="relative w-full">
         <div class="bg-shade-white min-h-[75vh] flex flex-row items-center justify-center">
-            <img src="{{ asset('Img/banner-product.png') }}" alt="maura-hill"
-                class="absolute opacity-20 bg-transparent object-cover h-full w-full -z-0">
-            <span
-                class="absolute text-primary-500 font-bold font-poppins text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Tentang
-                Kami</span>
+            <img src="{{ asset('Img/banner-product.png') }}" alt="Profile" class="absolute opacity-15 bg-transparent object-cover h-full w-full">
+            <span class="absolute text-primary-500 font-bold text-headline4 md:text-headline2 lg:text-headline3 xl:text-headline2">Tentang Kami</span>
         </div>
     </section>
     <!-- End  Hero Section-->

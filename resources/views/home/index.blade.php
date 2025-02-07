@@ -70,12 +70,9 @@
                     class="leading-[3.5rem] text-neutral-50 sm:text-neutral-50 block md:leading-relaxed">di
                     Maura Hill?</span></h1>
             <!-- Container untuk card -->
-            <div
-                class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-evenly sm:gap-x-6 sm:gap-y-10 px-16 sm:px-10 md:px-12 lg:gap-x-[2.2rem] lg:px-24">
-                <div
-                    class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
-                    <img src="Img/home/row-maura.png" alt="Profile"
-                        class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
+            <div class="p-8 flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:items-stretch sm:justify-evenly sm:gap-x-6 sm:gap-y-10 px-8 md:px-12 lg:gap-x-[2.2rem] lg:px-24">
+                <div class="border-2 px-8 pt-8 pb-10 shadow-lg shadow-slate-700 bg-neutral-50 sm:w-[44%] lg:w-[30.5%] flex flex-col gap-y-8 items-center justify-evenly">
+                    <img src="Img/home/row-maura.png" alt="Profile" class="w-[31.5%] max-w-[400px] h-auto mt-6 animate-slow-bounce">
                     <div class="flex flex-col items-center gap-y-6">
                         <h3
                             class="text-center text-headline5 font-semibold text-neutral-900 md:text-2xl">
