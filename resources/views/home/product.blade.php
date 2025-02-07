@@ -76,10 +76,10 @@
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
                             <img id="everest-house" src="{{ asset('images/product/house.png') }}" alt="Everest" class="shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom w-fit h-full">
-                            <button id="left-button" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                            <button id="left-button" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[4.8rem]">
                                 <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
-                            <button id="right-button" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                            <button id="right-button" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[5.3rem]">
                                 <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
@@ -87,19 +87,19 @@
                         <div class="lg:h-full gap-y-6 lg:gap-12 flex flex-col lg:items-center lg:justify-center sm:w-4/5 lg:w-[60%] xl:w-[70%] overflow-hidden max-w-full">
                             <!-- Judul & Deskripsi -->
                             <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
-                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] 2xl:text-headline3 lg:pb-0 lg:text-left text-center break-words w-full">
                                     EVEREST
                                 </span>
                                 <div class="block md:flex md:flex-row md:justify-center lg:block">
-                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6 2xl:text-headline5 break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
                                         Rumah 2 lantai dengan lebar 5 ini cocok untuk Anda dan keluarga Anda untuk bertumbuh bersama dan menikmati lingkungan yang nyaman.
                                     </p>
                                 </div>
                             </div>
                     
                             <!-- Spesifikasi (Dibawah <p>) -->
-                            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
-                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                            <div class="flex gap-y-4 flex-col xl:self-start gap-6 max-w-full">
+                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 2xl:text-headline4 break-words">
                                     <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT EVEREST</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">DUA LANTAI</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">6 X 10</span>
@@ -107,7 +107,7 @@
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
                                 <div class="flex sm:justify-around lg:justify-normal overflow-auto w-full max-w-full pb-2">
-                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 2xl:text-headline5 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
@@ -139,10 +139,10 @@
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
                             <img id="monstera-house" src="{{ asset('images/product/monstera.png') }}" alt="Monstera" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
-                            <button id="left-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                            <button id="left-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[4.8rem]">
                                 <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
-                            <button id="right-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                            <button id="right-button-monstera" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[5.3rem]">
                                 <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
@@ -151,19 +151,19 @@
                             
                             <!-- Judul & Deskripsi -->
                             <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
-                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] 2xl:text-headline3 lg:pb-0 lg:text-left text-center break-words w-full">
                                     MONSTERA
                                 </span>
                                 <div class="block md:flex md:flex-row md:justify-center lg:block">
-                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6 2xl:text-headline5  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
                                         Rumah satu lantai yang sangat populer di Grand Harvest. Rumah dengan low cost maintenance yang cocok untuk kamu dengan gaya hidup compact dan minimalist.
                                     </p>
                                 </div>
                             </div>
                     
                             <!-- Spesifikasi (Dibawah <p>) -->
-                            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
-                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                            <div class="flex gap-y-4 flex-col xl:self-start gap-6 max-w-full">
+                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 2xl:text-headline4 break-words">
                                     <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT MONSTERA</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">SATU LANTAI</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">5 X 12</span>
@@ -171,7 +171,7 @@
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
                                 <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full pb-2">
-                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 2xl:text-headline5 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
@@ -202,10 +202,10 @@
                         <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                         <div class="relative pb-2 sm:static flex justify-center aspect-[8/9.8] sm:aspect-[8/7.25] md:aspect-[8/6.6] w-full lg:aspect-[1/1.4] xl:aspect-[1/1.25] pt-6 lg:w-[55%] sm:animate-veryslow-bounce lg:order-first overflow-hidden lg:overflow-visible">
                             <img id="are-house" src="{{ asset('images/product/are.png') }}" alt="Are" class=" shadow-lg shadow-slate-800 rounded-xl max-w-[425px] object-cover object-bottom sm:w-fit h-full">
-                            <button id="left-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[8.5rem]">
+                            <button id="left-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 left-[1.5rem] sm:left-[4.5rem] md:left-[8.5rem] lg:left-[1rem] xl:left-[3.5rem] 2xl:left-[4.8rem]">
                                 <img src="{{ asset('images/product/arrow-left.png') }}" alt="left" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
-                            <button id="right-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[9rem]">
+                            <button id="right-button-are" type="button" class="absolute top-1/2 -translate-y-1/2 right-[1.85rem] sm:right-[5rem] md:right-[9rem] lg:right-[1.5rem] xl:right-[4rem] 2xl:right-[5.3rem]">
                                 <img src="{{ asset('images/product/arrow-right.png') }}" alt="right" class="object-cover object-bottom scale-75 sm:scale-100 w-full h-full">
                             </button>
                         </div>
@@ -214,19 +214,19 @@
                             
                             <!-- Judul & Deskripsi -->
                             <div class="flex flex-col gap-y-6 lg:gap-6 w-full max-w-full overflow-hidden">
-                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] lg:pb-0 lg:text-left text-center break-words w-full">
+                                <span class="uppercase block leading-[28px] text-primary-500 font-bold lg:leading-9 sm:text-headline4 sm:leading-6 lg:text-headline4 xl:text-[42px] 2xl:text-headline3 lg:pb-0 lg:text-left text-center break-words w-full">
                                     ARE
                                 </span>
                                 <div class="block md:flex md:flex-row md:justify-center lg:block">
-                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6  break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
+                                    <p class="text-justify text-body2 w-full sm:text-body1 xl:text-headline6 2xl:text-headline5 break-words text-wrap sm:font-bold lg:text-justify lg:w-full ">
                                         Rumah dengan 1 kamar, cocok untuk millennial yang produktif atau pasangan muda.
                                     </p>
                                 </div>
                             </div>
                     
                             <!-- Spesifikasi (Dibawah <p>) -->
-                            <div class="flex gap-y-4 flex-col gap-6 max-w-full">
-                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 break-words">
+                            <div class="flex gap-y-4 flex-col xl:self-start gap-6 max-w-full">
+                                <div class="w-full font-poppins text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 2xl:text-headline4 break-words">
                                     <span class="block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT ARE</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">SATU LANTAI</span>
                                     <span class="block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">5 X 12</span>
@@ -234,7 +234,7 @@
                     
                                 <!-- Tabel (Dibawah div spesifikasi) -->
                                 <div class="flex sm:justify-around lg:justify-normal overflow-auto border border-gray-300 w-full max-w-full pb-2">
-                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 text-primary-500">
+                                    <table class="table-fixed min-w-[40rem] md:min-w-[45rem] lg:min-w-[35rem] max-w-full border-collapse font-poppins text-body2 sm:text-body1 lg:text-body1 xl:text-headline6 2xl:text-headline5 text-primary-500">
                                         <thead>
                                             <tr class="px-2 border-2 border-primary-500 text-shade-white bg-primary-500">
                                                 <th class="px-2 break-words">Luas Tanah</th>
