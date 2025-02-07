@@ -54,6 +54,22 @@
                 <div class="w-full bg-shade-white border-primary-500 pb-6 sm:border-[3.5px] flex flex-col gap-y-8 sm:flex-row sm:flex-wrap justify-evenly md:justify-center lg:px-8">
                     <!-- Button -->
                     <div class="pb-2 flex justify-between gap-x-4 lg:gap-x-8 w-full sm:w-4/5 lg:w-full overflow-x-auto pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4 px-0">
+                        <button id="everest-button" type="button" id="rumah" class="uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] py-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap">
+                            EVEREST
+                        </button>
+                        
+                        <button id="monstera-button" type="button" id="fasilitas" class="uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] py-1 text-primary-500 border-4 border-primary-500 hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            MONSTERA
+                        </button>
+                        
+                        <button id="are-button" type="button" id="are" class="uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] py-1 text-primary-500 border-4 border-primary-500  hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            ARE
+                        </button>
+                        <button id="are-button" type="button" id="are" class="uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] py-1 text-primary-500 border-4 border-primary-500  hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
+                            ARE
+                        </button>
+                    </div>
+                    {{-- <div class="pb-2 flex justify-between gap-x-4 lg:gap-x-8 w-full sm:w-4/5 lg:w-full overflow-x-auto pt-6 font-bold text-headline6 md:text-headline5 lg:text-headline4 px-0">
                         <button id="everest-button" type="button" id="rumah" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap">
                             EVEREST
                         </button>
@@ -68,7 +84,7 @@
                         <button id="are-button" type="button" id="are" class="uppercase flex-shrink-0 min-w-max w-[30%] px-4 py-1 text-primary-500 border-4 border-primary-500  hover:bg-primary-500 hover:text-neutral-50 active:bg-primary-400 active:opacity-95 text-center whitespace-nowrap">
                             ARE
                         </button>
-                    </div>
+                    </div> --}}
                     <!-- button -->
 
                     <!-- Everest Card -->
