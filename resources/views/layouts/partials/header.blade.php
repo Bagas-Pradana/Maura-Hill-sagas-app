@@ -20,21 +20,21 @@
                         class="block lg:flex lg:justify-between text-black xl:justify-end xl:gap-x-16 px-6 lg:px-0">
                         <li class="group transition-all duration-300 ease-in-out">
                             <a href="{{ route('home') }}"
-                                class="{{ $active === 'index' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold font-poppins text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Beranda</a>
+                                class="{{ $active === 'index' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold  text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Beranda</a>
                         </li>
                         <li class="group transition-all duration-300 ease-in-out">
                             <a href="{{ route('product') }}"
-                                class="{{ $active === 'product' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold font-poppins text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Produk
+                                class="{{ $active === 'product' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold  text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Produk
                                 Kami</a>
                         </li>
                         <li class="group transition-all duration-300 ease-in-out">
                             <a href="{{ route('about') }}"
-                                class="{{ $active === 'about' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold font-poppins text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Tentang
+                                class="{{ $active === 'about' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold  text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Tentang
                                 Kami</a>
                         </li>
                         <li class="group transition-all duration-300 ease-in-out">
                             <a href="{{ route('contact') }}"
-                                class="{{ $active === 'contact' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold font-poppins text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Contact
+                                class="{{ $active === 'contact' ? 'underline underline-offset-8 decoration-amber-500 decoration-[3px]' : '' }} navbar-link lg:text-headline6 font-semibold  text-primary-500 hover:underline hover:underline-offset-8 hover:decoration-amber-500 hover:decoration-[3px]">Contact
                                 Us</a>
                         </li>
                     </ul>

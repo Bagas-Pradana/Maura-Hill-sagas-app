@@ -62,6 +62,7 @@ module.exports = {
                 "error-900": "#58120E",
                 "additional-color1": "#FFDCB4",
                 "additional-color2": "#FCA544",
+                "green-custom": "#25D366",
             },
             fontFamily: {
                 poppins: ["Poppins"],
@@ -132,7 +133,7 @@ module.exports = {
                 },
                 customPulse: {
                     "0%": { opacity: 1 }, // Mulai dengan penuh
-                    "50%": { opacity: 0 }, // Fade out lebih lama
+                    "50%": { opacity: 0.65 }, // Fade out lebih lama
                     "75%": { opacity: 1 }, // Tahan di opacity 0
                     "100%": { opacity: 1 }, // Kembali fade-in setelah delay
                 },

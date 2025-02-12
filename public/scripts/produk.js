@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Fungsi Swipe Left / Right untuk Gambar Produk
+    // Produk Everest
     const images = [
         "images/product/house.png",
         "images/product/layout2-everest.png",
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     let currentIndex = 0;
-    const imgElement = document.getElementById('everest-house');
+
+    const imgElement = document.getElementById("everest-house");
     const leftButton = document.getElementById("left-button");
     const rightButton = document.getElementById("right-button");
 
@@ -111,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     let currentIndex1 = 0;
-    const imgElement1 = document.getElementById('monstera-house');
+    const imgElement1 = document.getElementById("monstera-house");
     const leftButton1 = document.getElementById("left-button-monstera");
     const rightButton1 = document.getElementById("right-button-monstera");
 
@@ -144,7 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     let currentIndex2 = 0;
-    const imgElement2 = document.getElementById('are-house');
+
+    const imgElement2 = document.getElementById("are-house");
     const leftButton2 = document.getElementById("left-button-are");
     const rightButton2 = document.getElementById("right-button-are");
 
@@ -169,5 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         updateAreImage();
     });
+
+
 });
 
