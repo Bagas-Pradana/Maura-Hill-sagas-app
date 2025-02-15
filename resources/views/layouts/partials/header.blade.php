@@ -1,5 +1,5 @@
 <header id="header"
-    class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 backdrop-blur-sm">
+    class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20 backdrop-blur-sm">
     <div id="customize" class="container xl:px-12">
         <div class="w-full flex items-center justify-between relative">
             <div class="px-0">
@@ -15,7 +15,7 @@
                     <span class="hamburger-line origin-bottom-right"></span>
                 </button>
                 <nav id="nav-menu"
-                    class="hidden absolute py-5 bg-white shadow-xl rounded-md max-w-[350px] w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+                    class="hidden absolute z-20 py-5 bg-white shadow-xl rounded-md max-w-[350px] w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
                     <ul
                         class="block lg:flex lg:justify-between text-black xl:justify-end xl:gap-x-16 px-6 lg:px-0">
                         <li class="group transition-all duration-300 ease-in-out">

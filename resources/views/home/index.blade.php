@@ -11,10 +11,10 @@
                 <div class="flex justify-end px-0 lg:w-[60%] xl:w-2/3">
                     <div class="flex flex-col lg:gap-y-4 xl:gap-y-8 2xl:gap-y-14 leading-9 animate-fadeOutIn">
                         <span id="form-title"
-                            class="block text-primary-500 font-bold transition-opacity text-headline6 lg:text-headline4 xl:text-headline3 2xl:text-headline2 pr-20 lg:pr-40">Selamat
+                            class="block text-primary-500 font-bold transition-opacity text-headline6 lg:text-headline4 xl:text-headline3 2xl:text-headline2 pr-10 sm:pr-20 lg:pr-40">Selamat
                             Datang</span>
                         <span id="form-title2"
-                            class="text-right block text-primary-500 font-bold transition-opacity text-headline6 lg:text-headline4 xl:text-headline3 2xl:text-headline2 pl-20 lg:pl-40">Di
+                            class="text-right block text-primary-500 font-bold transition-opacity text-headline6 lg:text-headline4 xl:text-headline3 2xl:text-headline2 pl-6 sm:pl-20 lg:pl-40">Di
                             Rumah Idaman</span>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
     </div>
     <!-- End Animasi Text Selamat Datang -->
     <!-- Hero Section -->
-    <section  class="relative w-full min-h-screen overflow-hidden">
+    <section  id="hero" class="relative w-full min-h-screen overflow-hidden">
         <div
             class="relative font-semibold text-headline5 min-w-7xl bg-transparent sm:bg-sky-200 sm:text-2xl lg:text-headline4 xl:text-headline2 md:min-w-96 md:mx-0 lg:w-full min-h-screen">
             <img src="{{ asset('images/home/background_langit.png') }}" alt="Profile"
@@ -32,7 +32,7 @@
             <div
                 class="absolute mx-auto bottom-4 md:bottom-28 lg:bottom-48 left-1/2 -translate-x-1/2 items-center justify-center animate-custom-pulse">
                 <a href="#banner"
-                    class=" text-blue-500 mx-auto block text-headline4 -rotate-90 font-bold">⟨</a>
+                    class=" text-primary-500 mx-auto block text-headline4 -rotate-90 font-bold">⟨</a>
             </div>
         </div>
     </section>
