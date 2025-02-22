@@ -6,10 +6,11 @@
     <!-- Animasi Text Selamat Datang -->
     <div
         class="bg-transparent absolute  top-[4.5rem] xl:top-[6.5rem] 2xl:top-[8rem] left-0 w-full flex items-center justify-end px-8 lg:px-6 z-10 h-[25vh]">
-        <div  class="md:container xl:px-12">
+        <div class="md:container xl:px-12">
             <div class="w-full flex justify-end relative">
                 <div class="flex justify-end px-0 lg:w-[60%] xl:w-2/3">
-                    <div class="flex flex-col lg:gap-y-4 xl:gap-y-8 2xl:gap-y-14 leading-9 animate-fadeOutIn">
+                    <div
+                        class="flex flex-col lg:gap-y-4 xl:gap-y-8 2xl:gap-y-14 leading-9 animate-fadeOutIn">
                         <span id="form-title"
                             class="block text-primary-500 font-bold transition-opacity text-headline6 lg:text-headline4 xl:text-headline3 2xl:text-headline2 pr-10 sm:pr-20 lg:pr-40">Selamat
                             Datang</span>
@@ -18,13 +19,13 @@
                             Rumah Idaman</span>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </div>
+    </div>
     <!-- End Animasi Text Selamat Datang -->
     <!-- Hero Section -->
-    <section  id="hero" class="relative w-full min-h-screen overflow-hidden">
+    <section id="hero" class="relative w-full min-h-screen overflow-hidden">
         <div
             class="relative font-semibold text-headline5 min-w-7xl bg-transparent sm:bg-sky-200 sm:text-2xl lg:text-headline4 xl:text-headline2 md:min-w-96 md:mx-0 lg:w-full min-h-screen">
             <img src="{{ asset('images/home/background_langit.png') }}" alt="Profile"
@@ -69,15 +70,13 @@
         <!-- <div class="absolute mx-auto bottom-2 right-1/2 inline-flex items-center justify-center animate-custom-pulse"> -->
         <div class="absolute bottom-2 left-1/2 -translate-x-1/2 animate-custom-pulse">
             <!-- <a href="#facility" class="text-primary-500 mx-auto block text-headline4 -rotate-90 font-semibold">⟨</a> -->
-            <a href="#facility"
-                class="text-primary-500 block text-headline4 -rotate-90 font-bold">⟨</a>
+            <a href="#facility" class="text-primary-500 block text-headline4 -rotate-90 font-bold">⟨</a>
         </div>
     </section>
     <!-- End Banner Section -->
     <!-- Article Section -->
     <section id="facility">
-        <div
-            class="border-y-4 py-[6.5rem]  bg-primary-500 sm:border-0 sm:border-b-4 sm:bg-primary-500">
+        <div class="border-y-4 py-[6.5rem]  bg-primary-500 sm:border-0 sm:border-b-4 sm:bg-primary-500">
             <h1
                 class="mx-auto text-headline4 text-center font-bold text-slate-800 sm:text-[40px] sm:leading-tight md:text-headline3">
                 Kenapa Harus Beli <span
@@ -183,7 +182,8 @@
         <div
             class=" font-bold border-b-4 px-4 py-4 bg-transparent text-center h-[50vh] flex flex-col gap-y-2 items-center justify-center text-additional1 sm:text-headline4 md:text-headline3">
             <h3 class="mx-auto text-slate-800">Kunjungi Instagram Kami</h3>
-            <a href="https://www.instagram.com/official.maurahill/" class="text-primary-500 block">@official.maurahill</a>
+            <a href="https://www.instagram.com/official.maurahill/"
+                class="text-primary-500 block">@official.maurahill</a>
         </div>
     </section>
     <!-- End Sosial Media -->
