@@ -3,7 +3,7 @@
 
 <head>
     <!-- Head -->
-    @include('layouts.partials.head')
+    @include('layouts.partials.home.head')
     <!-- End Head -->
     <!-- Style -->
     @stack('styles')
@@ -13,13 +13,13 @@
 
 <body>
     <!-- Header Section -->
-    @include('layouts.partials.header')
+    @include('layouts.partials.home.header')
     <!-- End Header Section -->
     <!-- Content Section -->
     @yield('content')
     <!-- End Section -->
     <!-- Footer -->
-    @include('layouts.partials.footer')
+    @include('layouts.partials.home.footer')
     <!-- End Footer -->
     <!-- Start Popup -->
     <section id="popup-maura"
@@ -141,36 +141,36 @@
                         button.classList.add('rotate-180');
                         setTimeout(() => {
                             icon.style.display =
-                            'none'; // Sembunyikan ikon telepon
+                                'none'; // Sembunyikan ikon telepon
                             button.textContent = '×'; // Ganti dengan simbol '×'
                             button.classList.remove(
-                            'rotate-180'); // Hapus class rotasi
+                                'rotate-180'); // Hapus class rotasi
                             button.classList.add(
-                            'px-4'); // Tambahkan class m-auto
+                                'px-4'); // Tambahkan class m-auto
                             button.classList.add(
-                            'pt-2'); // Tambahkan class m-auto
+                                'pt-2'); // Tambahkan class m-auto
                         }, 500);
                     } else {
                         // Jika '×' sedang ditampilkan, putar 180 derajat dan ganti dengan ikon telepon
                         button.classList.add('rotate-180');
                         setTimeout(() => {
                             icon.style.display =
-                            'block'; // Tampilkan ikon telepon
+                                'block'; // Tampilkan ikon telepon
                             button.innerHTML =
                                 `<img src="{{ asset('images/telephone.png') }}" alt="Whatsapp" id="telephone" class="w-full h-full p-2">`; // Tampilkan ikon telepon
                             button.classList.remove(
-                            'rotate-180'); // Hapus class rotasi
+                                'rotate-180'); // Hapus class rotasi
                             button.classList.remove(
-                            'px-4'); // Hapus class m-auto
+                                'px-4'); // Hapus class m-auto
                             button.classList.remove(
-                            'pt-2'); // Hapus class m-auto
+                                'pt-2'); // Hapus class m-auto
                         }, 500);
                     }
                 });
             } else {
                 console.error(
                     'Elemen tidak ditemukan! Pastikan ID "telephone-button" dan "telephone" ada di HTML.'
-                    );
+                );
             }
         });
 

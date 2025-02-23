@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::middleware('guest')->group(function () {
     Route::get('product', [HomeController::class, 'product'])->name('product');
     Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 });
+
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');

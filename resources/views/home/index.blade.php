@@ -94,8 +94,8 @@
                             class="text-center text-headline5 font-semibold text-neutral-900 md:text-2xl">
                             ROW Jalan 10 Meter</h3>
                         <p class="text-justify text-body2 font-semibold">Kemewahan sebuah kawasan tidak
-                            hanya pada sisi produk bangunan saja, kemewahan yang sebenarnya di Grand
-                            Harvest adalah kelegaan pada ROW jalan minimum 10 meter. Memungkinkan warga
+                            hanya pada sisi produk bangunan saja, kemewahan yang sebenarnya di Maura
+                            Hill adalah kelegaan pada ROW jalan minimum 10 meter. Memungkinkan warga
                             memiliki lebih daripada satu kendaraan tanpa mengganggu kelancaran akses</p>
                     </div>
                 </div>
