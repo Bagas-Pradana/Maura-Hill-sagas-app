@@ -12,6 +12,6 @@ class DashboardController extends Controller
      */
     public function index(Request $request): \Illuminate\Contracts\View\View
     {
-        return view('app.dashboard.index');
+        return view('app.dashboard');
     }
 }

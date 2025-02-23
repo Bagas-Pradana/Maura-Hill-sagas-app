@@ -17,10 +17,10 @@
                 </a>
             </li>
             <li class="nav-item nav-profile dropdown">
-                <a class="nav-link dropdown-toggle mx-0" id="profileDropdown" href="#"
+                <a class="nav-link dropdown-toggle mx-0 gap-3" id="profileDropdown" href="#"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">David Greymaax</p>
+                        <p class="m-0 text-black">David Greymaax</p>
                     </div>
                     <div class="nav-profile-img">
                         <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="image">
@@ -33,9 +33,9 @@
                 </div>
             </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+        {{-- <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
             type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
-        </button>
+        </button> --}}
     </div>
 </nav>

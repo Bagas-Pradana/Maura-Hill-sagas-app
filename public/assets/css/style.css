@@ -20918,6 +20918,10 @@ code {
   color: #343a40;
   font-size: 1.125rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
 }
 .page-title .page-title-icon {
   display: inline-block;
@@ -25210,8 +25214,8 @@ dl li {
 @media (max-width: 991px) {
   .navbar .navbar-menu-wrapper {
     width: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 36px;
   }
 }
 .navbar .navbar-menu-wrapper .navbar-toggler {
@@ -25219,8 +25223,8 @@ dl li {
   color: inherit;
   height: 70px;
   border-radius: 0px;
-  padding-left: 5px;
-  padding-right: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right) {
   font-size: 1.5rem;
@@ -25433,6 +25437,7 @@ dl li {
   }
 }
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link.dropdown-toggle:after {
+  display: none;
   line-height: 2;
 }
 @media (min-width: 992px) {
@@ -26281,7 +26286,7 @@ dl li {
 
 .content-wrapper {
   background: #f2edf3;
-  padding: 2.75rem 2.25rem;
+  padding: 2rem;
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
