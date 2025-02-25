@@ -18,10 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// dd('test');
+
 Route::middleware('guest')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('about', [HomeController::class, 'about'])->name('about');
     Route::get('product', [HomeController::class, 'product'])->name('product');
+    Route::get('about', [HomeController::class, 'about'])->name('about');
     Route::get('contact', [HomeController::class, 'contact'])->name('contact');
     // Auth Login
     Route::prefix('login')->name('login.')->group(function () {

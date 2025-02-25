@@ -1,178 +1,104 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function() {
     // Fungsi Menjalankan Button untuk Fitur RUMAH dan Fasilitas
-    const rumahBtn = document.getElementById("rumah");
-    const fasilitasBtn = document.getElementById("fasilitas");
-    const bannerRumah = document.getElementById("banner-rumah-maura");
+    const rumahBtn = $("#rumah");
+    const fasilitasBtn = $("#fasilitas");
+    const bannerRumah = $("#banner-rumah-maura");
     const banners = [
-        document.getElementById("banner-masjid"),
-        document.getElementById("wall-climbing"),
-        document.getElementById("kids-playground"),
-        document.getElementById("outdoor-gym"),
-        document.getElementById("jogging-track"),
-        document.getElementById("barbeque")
+        $("#banner-masjid"),
+        $("#wall-climbing"),
+        $("#kids-playground"),
+        $("#outdoor-gym"),
+        $("#jogging-track"),
+        $("#barbeque")
     ];
 
     function setActive(button) {
-        if (button === rumahBtn) {
-            rumahBtn.classList.add("text-shade-white", "bg-primary-500");
-            fasilitasBtn.classList.remove("text-shade-white", "bg-primary-500");
-            banners.forEach(banner => banner.classList.add("hidden"));
-            document.getElementById("banner-rumah-maura").classList.remove("hidden");
-            document.getElementById("house-content").classList.remove("hidden");
+        if (button.is(rumahBtn)) {
+            rumahBtn.addClass("text-shade-white bg-primary-500");
+            fasilitasBtn.removeClass("text-shade-white bg-primary-500");
+            banners.forEach(banner => banner.addClass("hidden"));
+            bannerRumah.removeClass("hidden");
+            $("#house-content").removeClass("hidden");
         } else {
-            fasilitasBtn.classList.add("text-shade-white", "bg-primary-500");
-            rumahBtn.classList.remove("text-shade-white", "bg-primary-500");
-            banners.forEach(banner => banner.classList.remove("hidden"));
-            document.getElementById("banner-rumah-maura").classList.add("hidden");
-            document.getElementById("house-content").classList.add("hidden");
+            fasilitasBtn.addClass("text-shade-white bg-primary-500");
+            rumahBtn.removeClass("text-shade-white bg-primary-500");
+            banners.forEach(banner => banner.removeClass("hidden"));
+            bannerRumah.addClass("hidden");
+            $("#house-content").addClass("hidden");
         }
     }
 
     setActive(rumahBtn);
-    rumahBtn.addEventListener("click", function () {
+    rumahBtn.click(function () {
         setActive(rumahBtn);
     });
-
-    fasilitasBtn.addEventListener("click", function () {
+    fasilitasBtn.click(function () {
         setActive(fasilitasBtn);
     });
 
-    // Fitur Tipe Rumah
-    const everestBtn = document.getElementById("everest-button");
-    const monsteraBtn = document.getElementById("monstera-button");
-    const areBtn = document.getElementById("are-button");
-    const everestIndex = document.getElementById("everest-index");
-    const monsteraIndex = document.getElementById("monstera-index");
-    const areIndex = document.getElementById("are-index");
+    // Event listener untuk tombol dengan class 'house-button'
+    const firstButton = $('.house-button').first();
+    // const firstKey = firstButton.data('key');
 
-    function setContent(activeButton, activeSection) {
-        everestBtn.classList.remove("text-shade-white", "bg-primary-500");
-        monsteraBtn.classList.remove("text-shade-white", "bg-primary-500");
-        areBtn.classList.remove("text-shade-white", "bg-primary-500");
-        activeButton.classList.add("text-shade-white", "bg-primary-500");
-        everestIndex.classList.add("hidden");
-        monsteraIndex.classList.add("hidden");
-        areIndex.classList.add("hidden");
-        activeSection.classList.remove("hidden");
+    // Setel tombol pertama sebagai aktif
+    firstButton.removeClass('text-primary-500');
+    firstButton.addClass('text-shade-white bg-primary-500');
+
+    $('.house-button').click(function() {
+        // Ambil nilai dari atribut data-unit
+        const unit = $(this).data('unit');
+        const key = $(this).data('key');
+        $('[id^="content-unit"]').addClass('hidden'); // Sembunyikan semua content-unit
+        const selectedUnit = `#content-unit-${key}`;
+        $(selectedUnit).removeClass('hidden'); // Tampilkan elemen yang dipilih
+        //     debugsystmen
+        // $(`${selectedUnit} .house-unit`).each(function() {
+        //     console.log($(this).data('index'));
+        // });
+
+        // Tampilkan hanya content-unit yang sesuai dengan tombol yang ditekan
+        $(`#content-unit-${key}`).removeClass('hidden');
+        $('.house-button').each(function() {
+            $(this).addClass('text-primary-500'); // Tambahkan class text-primary-500
+            $(this).removeClass('text-shade-white bg-primary-500'); // Hapus class text-shade-white dan bg-primary-500
+        });
+
+        // Set tombol yang ditekan ke keadaan active
+        $(this).removeClass('text-primary-500'); // Hapus class text-primary-500
+        $(this).addClass('text-shade-white bg-primary-500'); // Tambahkan class text-shade-white dan bg-primary-500
+
+    });
+    // Switch Image
+    let currentIndex = 0; // Indeks gambar yang sedang aktif
+
+    function updateImageDisplay(selectedUnit) {
+        $(`${selectedUnit} .house-unit`).hide();
+        $(`${selectedUnit} .house-unit[data-index="${currentIndex}"]`).show();
     }
 
-    setContent(everestBtn, everestIndex);
-
-    everestBtn.addEventListener("click", function () {
-        setContent(everestBtn, everestIndex);
-    });
-
-    monsteraBtn.addEventListener("click", function () {
-        setContent(monsteraBtn, monsteraIndex);
-    });
-
-    areBtn.addEventListener("click", function () {
-        setContent(areBtn, areIndex);
-    });
-
-    // Fungsi Swipe Left / Right untuk Gambar Produk
-    // Produk Everest
-    const images = [
-        "images/product/house.png",
-        "images/product/layout2-everest.png",
-        "images/product/layout3-everest.png"
-    ];
-
-    let currentIndex = 0;
-
-    const imgElement = document.getElementById("everest-house");
-    const leftButton = document.getElementById("left-button");
-    const rightButton = document.getElementById("right-button");
-
-    function updateEverestImage() {
-        imgElement.src = images[currentIndex];
-    }
-
-    rightButton.addEventListener("click", function () {
-        if (currentIndex < images.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
-        updateEverestImage();
-    });
-
-    leftButton.addEventListener("click", function () {
+    $('.left-button').click(function () {
+        const selectedUnit = `#content-unit-${$(this).closest('[id^="content-unit"]').attr('id').split('-').pop()}`;
+        const totalImages = $(`${selectedUnit} .house-unit`).length;
         if (currentIndex > 0) {
-            currentIndex--;
+            currentIndex--; // Kurangi indeks jika belum di batas kiri
         } else {
-            currentIndex = images.length - 1;
+            currentIndex = totalImages - 1; // Loop ke gambar terakhir jika sudah di gambar pertama
         }
-        updateEverestImage();
+        updateImageDisplay(selectedUnit);
     });
 
-    // Produk Monstera
-    const images1 = [
-        "images/product/monstera.png",
-        "images/product/layout2-monstera.png",
-    ];
-
-    let currentIndex1 = 0;
-    const imgElement1 = document.getElementById("monstera-house");
-    const leftButton1 = document.getElementById("left-button-monstera");
-    const rightButton1 = document.getElementById("right-button-monstera");
-
-    function updateMonsteraImage() {
-        imgElement1.src = images1[currentIndex1];
-    }
-
-    rightButton1.addEventListener("click", function () {
-        if (currentIndex1 < images1.length - 1) {
-            currentIndex1++;
+    $('.right-button').click(function () {
+        const selectedUnit = `#content-unit-${$(this).closest('[id^="content-unit"]').attr('id').split('-').pop()}`;
+        const totalImages = $(`${selectedUnit} .house-unit`).length;
+        if (currentIndex < totalImages - 1) {
+            currentIndex++; // Tambah indeks jika belum di batas kanan
         } else {
-            currentIndex1 = 0;
+            currentIndex = 0; // Loop ke gambar pertama jika sudah di gambar terakhir
         }
-        updateMonsteraImage();
+        updateImageDisplay(selectedUnit);
     });
 
-    leftButton1.addEventListener("click", function () {
-        if (currentIndex1 > 0) {
-            currentIndex1--;
-        } else {
-            currentIndex1 = images1.length - 1;
-        }
-        updateMonsteraImage();
-    });
-
-    // Produk Are
-    const images2 = [
-        "images/product/are.png",
-        "images/product/layout2-are.png",
-    ];
-
-    let currentIndex2 = 0;
-
-    const imgElement2 = document.getElementById("are-house");
-    const leftButton2 = document.getElementById("left-button-are");
-    const rightButton2 = document.getElementById("right-button-are");
-
-    function updateAreImage() {
-        imgElement2.src = images2[currentIndex2];
-    }
-
-    rightButton2.addEventListener("click", function () {
-        if (currentIndex2 < images2.length - 1) {
-            currentIndex2++;
-        } else {
-            currentIndex2 = 0;
-        }
-        updateAreImage();
-    });
-
-    leftButton2.addEventListener("click", function () {
-        if (currentIndex2 > 0) {
-            currentIndex2--;
-        } else {
-            currentIndex2 = images2.length - 1;
-        }
-        updateAreImage();
-    });
-
-
+    // console.log("Script slider siap!");
 });
+
 

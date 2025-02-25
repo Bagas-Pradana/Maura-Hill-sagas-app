@@ -21,10 +21,10 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        
+
         // User Seeder
         User::truncate();
-        
+
         User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
@@ -34,6 +34,8 @@ class DatabaseSeeder extends Seeder
         // Setting Seeder
         $this->call([
             SettingSeeder::class,
+            HouseProductSeeder::class
         ]);
+
     }
 }

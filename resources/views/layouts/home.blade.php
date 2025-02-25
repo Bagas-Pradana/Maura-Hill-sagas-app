@@ -130,41 +130,44 @@
             // Periksa setiap 10 detik apakah waktu sudah cukup untuk menampilkan popup kembali
             setInterval(checkPopup, 10000);
 
+
+
             // Contact Number
             const button = document.getElementById('telephone-button');
             const icon = document.getElementById('telephone');
+
             if (button && icon) {
                 button.addEventListener('click', function() {
                     // Cek apakah ikon sedang ditampilkan
                     if (icon.style.display !== 'none') {
                         // Jika ikon sedang ditampilkan, putar 180 derajat dan ganti dengan '×'
-                        button.classList.add('rotate-180');
+                        // button.classList.add('rotate-180');
                         setTimeout(() => {
-                            icon.style.display =
-                                'none'; // Sembunyikan ikon telepon
-                            button.textContent = '×'; // Ganti dengan simbol '×'
-                            button.classList.remove(
-                                'rotate-180'); // Hapus class rotasi
                             button.classList.add(
                                 'px-4'); // Tambahkan class m-auto
                             button.classList.add(
-                                'pt-2'); // Tambahkan class m-auto
-                        }, 500);
+                                'pt-[0.55rem]'); // Tambahkan class m-auto
+                            icon.style.display =
+                                'none'; // Sembunyikan ikon telepon
+                            button.textContent = '×'; // Ganti dengan simbol '×'
+                            // button.classList.remove(
+                            //     'rotate-180'); // Hapus class rotasi
+                        }, 1);
                     } else {
                         // Jika '×' sedang ditampilkan, putar 180 derajat dan ganti dengan ikon telepon
-                        button.classList.add('rotate-180');
+                        // button.classList.add('rotate-180');
                         setTimeout(() => {
                             icon.style.display =
                                 'block'; // Tampilkan ikon telepon
+                                // button.classList.remove(
+                                //     'rotate-180'); // Hapus class rotasi
+                                button.classList.remove(
+                                    'px-4'); // Hapus class m-auto
+                                button.classList.remove(
+                                    'pt-[0.55rem]'); // Hapus class m-auto
                             button.innerHTML =
                                 `<img src="{{ asset('images/telephone.png') }}" alt="Whatsapp" id="telephone" class="w-full h-full p-2">`; // Tampilkan ikon telepon
-                            button.classList.remove(
-                                'rotate-180'); // Hapus class rotasi
-                            button.classList.remove(
-                                'px-4'); // Hapus class m-auto
-                            button.classList.remove(
-                                'pt-2'); // Hapus class m-auto
-                        }, 500);
+                        }, 1);
                     }
                 });
             } else {
