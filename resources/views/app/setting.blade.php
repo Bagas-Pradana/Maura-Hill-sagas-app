@@ -8,8 +8,11 @@
             <span class="page-title-icon bg-gradient-primary text-white">
                 <i class="mdi mdi-home"></i>
             </span>
+            <span class="page-title-icon bg-gradient-primary text-white">
+                <a style="color: white;" href="{{ route('houseProduct.index') }}"><i class="mdi mdi-newspaper"></i></a>
+            </span>
             <i class="mdi mdi-slash-forward"></i>
-            Setting
+            {{ $index }}
         </h3>
         <button type="button" class="btn bg-gradient-primary text-white btn-create"
             data-bs-toggle="modal">

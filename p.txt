@@ -1,0 +1,2 @@
+//  setinng penambahann data untuk admin
+//  buatkan ajax , lalu menguunakan crud gambar

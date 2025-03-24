@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\HouseProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,5 +43,10 @@ Route::middleware('auth')->group(function () {
         Route::get('{id}/edit', [SettingController::class,'edit'])->name('edit');
         Route::put('{id}/update', [SettingController::class,'update'])->name('update');
         Route::delete('{id}/destroy', [SettingController::class,'destroy'])->name('destroy');
+    });
+
+    // Setting Post
+    Route::prefix('houseProduct')->name('houseProduct.')->group(function () {
+        Route::get('/', [HouseProductController::class, 'index'])->name('index');
     });
 });

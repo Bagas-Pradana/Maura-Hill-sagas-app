@@ -13,7 +13,15 @@ class SettingController extends Controller
      */
     public function index(SettingsDataTable $dataTable)
     {
-        return $dataTable->render("app.setting");
+        // return view('user',
+        // [
+        //     'hidup' => '',
+        //     'title' => $author,
+        //     'post' => $author->postingan->load('category', 'author'),
+        //     'user' => $author->name,
+        // ]);
+        // $index => "index",
+        return $dataTable->render("app.setting", ['index' => "Marketing Info"]);
     }
 
     /**
