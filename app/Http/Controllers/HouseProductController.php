@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\HouseProductDataTable;
 use App\Models\HouseProduct;
 use Illuminate\Http\Request;
 
@@ -10,12 +11,12 @@ class HouseProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(HouseProductDataTable $dataTable)
     {
-        $hasilProduct = HouseProduct::all();
-        dd($hasilProduct);
+        // $hasilProduct = HouseProduct::all();
+        // dd($hasilProduct);
         // return view("app.setting-posts");
-        // return view("app.houseProduct", ['index' => "House Product"]);
+        return $dataTable->render("app.houseProduct", ['index' => "House Product"]);
     }
 
     /**

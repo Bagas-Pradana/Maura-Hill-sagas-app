@@ -3,26 +3,33 @@
 @section('title', 'Setting')
 
 @section('content')
-<div class="page-header">
-    <h3 class="page-title">
-        <span class="page-title-icon bg-gradient-primary text-white">
-            <a style="color: white;" href="/setting"><i class="mdi mdi-home"></i></a>
-        </span>
-        <span class="page-title-icon bg-gradient-primary text-white">
-            <a style="color: white;" href="{{ route('houseProduct.index') }}"><i class="mdi mdi-newspaper"></i></a>
-        </span>
-        <i class="mdi mdi-slash-forward"></i>
-        {{ $index }}
-    </h3>
-    <button type="button" class="btn bg-gradient-primary text-white btn-create"
+    <div class="page-header">
+        <h3 class="page-title">
+            <span class="page-title-icon bg-gradient-primary text-white">
+                <a style="color: white;" href="/setting"><i class="mdi mdi-home"></i></a>
+            </span>
+            <span class="page-title-icon bg-gradient-primary text-white">
+                <a style="color: white;" href="{{ route('houseProduct.index') }}"><i class="mdi mdi-newspaper"></i></a>
+            </span>
+            <i class="mdi mdi-slash-forward"></i>
+            {{ $index }}
+        </h3>
+        <button type="button" class="btn bg-gradient-primary text-white btn-create"
+            data-bs-toggle="modal">
+            Tambah Data
+        </button>
+    </div>
+    <button type="button" class="mb-4 btn bg-gradient-primary text-white btn-create"
         data-bs-toggle="modal">
-        Tambah Data
+        Preview
     </button>
-</div>
-<button type="button" class="btn bg-gradient-primary text-white btn-create"
-    data-bs-toggle="modal">
-    Preview
-</button>
+    <div class="row">
+        <div class="col-12">
+            <!-- Tabel -->
+            {!! $dataTable->table(['id' => 'table-container']) !!}
+            <!-- Tabel -->
+        </div>
+    </div>
 
 {{-- ----------------------------------------------------CARD HOUSE---------------------------------------------------------------------------- --}}
                 {{-- @foreach ($products as $key => $product)
@@ -137,3 +144,7 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+    {!! $dataTable->scripts() !!}
+@endpush
