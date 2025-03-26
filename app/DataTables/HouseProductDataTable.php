@@ -14,6 +14,23 @@ use Yajra\DataTables\Services\DataTable;
 
 class HouseProductDataTable extends DataTable
 {
+    // Helper
+    private function formatJsonAsList($data): string
+    {
+        $html = '<ul style="list-style-type: none; padding: 0; margin: 0;">';
+
+        // Periksa jika data adalah array
+        foreach ($data as $item) {
+            // Pastikan bahwa item adalah array dengan kunci 'label', 'value', dan 'unit'
+            if (isset($item['label'], $item['value'], $item['unit'])) {
+                $html .= "<li><strong>{$item['label']}:</strong> {$item['value']} {$item['unit']}</li>";
+            }
+        }
+
+        $html .= '</ul>';
+        return $html;
+    }
+
     /**
      * Build the DataTable class.
      *
@@ -23,12 +40,22 @@ class HouseProductDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addIndexColumn()
-            ->setRowId('unit')
-            ->editColumn('unit', function ($row) {
-                return '<span class="badge badge-primary">' . $row->unit . '</span>';
+            ->setRowId('uuid')
+            ->editColumn('uuid', function ($row) {
+                return '<span class="badge badge-primary">' . $row->uuid . '</span>';
             })
-            ->editColumn('title', function ($row) {
-                return $row->title;
+            ->editColumn('key', function ($row) {
+                return $row->key;
+            })
+            ->editColumn('specification_table', function ($row) {
+                // Jika is_array true, decode JSON dan tampilkan sebagai list
+                $specification_table = json_decode($row->specification_table, true); // Decode JSON string ke array
+                if (is_array($specification_table)) {
+                    return $this->formatJsonAsList($specification_table); // Format array sebagai list
+                }
+                // Jika bukan array, tampilkan specification_table biasa
+                // return json_decode($row->specification_table);
+                return $row->specification_table;
             })
             ->addColumn('action', function ($row) {
                 // Set Url
@@ -43,7 +70,7 @@ class HouseProductDataTable extends DataTable
 
                 return '<div class="d-flex flex-row justify-content-center gap-2">' . $buttons . '</div>';
             })
-            ->rawColumns(['unit', 'title', 'action']);
+            ->rawColumns(['unit', 'title', 'specification_table', 'action']);
     }
 
     /**
@@ -90,7 +117,14 @@ class HouseProductDataTable extends DataTable
                 ->addClass('text-center')
                 ->searchable(true)
                 ->width(150),
-            Column::make('title')->title('Description Title')->searchable(true),
+            Column::make('title')
+                ->title('Description Title')
+                ->searchable(true)
+                ->addClass('text-center pe-4'),
+            Column::make('specification_table')
+                ->title('Specification')
+                ->searchable(true)
+                ->addClass('text-center pe-4'),
             Column::computed('action')
                 ->exportable(false)
                 ->printable(false)

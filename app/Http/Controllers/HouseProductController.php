@@ -13,10 +13,16 @@ class HouseProductController extends Controller
      */
     public function index(HouseProductDataTable $dataTable)
     {
-        // $hasilProduct = HouseProduct::all();
+        $hasilProduct = HouseProduct::all();
         // dd($hasilProduct);
         // return view("app.setting-posts");
-        return $dataTable->render("app.houseProduct", ['index' => "House Product"]);
+        return $dataTable->render(
+            "app.houseProduct",
+            [
+                'index' => "House Product",
+                'hasilProduct' => $hasilProduct
+            ]
+        );
     }
 
     /**

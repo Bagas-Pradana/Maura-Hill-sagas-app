@@ -19,7 +19,7 @@
             Tambah Data
         </button>
     </div>
-    <button type="button" class="mb-4 btn bg-gradient-primary text-white btn-create"
+    <button type="button" class="mb-4 btn bg-gradient-primary text-white btn-preview"
         data-bs-toggle="modal">
         Preview
     </button>
@@ -121,18 +121,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-data">
-                    <div class="form-group mb-3">
-                        <label for="key" class="mb-3">Key</label>
-                        <input type="text" class="form-control" id="key" name="key"
-                            placeholder="Key">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="value" class="mb-3">Value</label>
-                        <input type="text" class="form-control" id="value" name="value"
-                            placeholder="Value">
-                    </div>
-                </form>
+                <!-- Button -->
+                <div class="pb-2 flex justify-between gap-x-2 lg:gap-x-2 w-full sm:w-4/5 lg:w-full overflow-hidden font-bold text-body2 md:text-body1 lg:text-headline6 px-0">
+                    {{-- @dd($hasilProduct) --}}
+                    @foreach ($hasilProduct as $index => $product)
+                    <button id="house-button" data-unit="{{ $product['unit'] }}" data-key="{{ $index }}" type="button"
+                        class="house-button uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] p-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap">
+                        {{ $product['unit'] }}
+                    </button>
+                    @endforeach
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn bg-gradient-secondary"
@@ -147,4 +145,14 @@
 
 @push('scripts')
     {!! $dataTable->scripts() !!}
+    <script>
+        // PREVIEW DATA
+        $('.btn-preview').click(function() {
+            $('#modal-form').modal('show');
+            $('#modal-title').text('Preview Layout');
+            $('#form-data').trigger('reset');
+            $('#btn-modal-action').text('Tambah Data').addClass('create-data').data
+                ('url', '{{ route('houseProduct.store') }}');
+        });
+    </script>
 @endpush
