@@ -38,15 +38,16 @@ Route::middleware('auth')->group(function () {
 
     // Setting
     Route::prefix('setting')->name('setting.')->group(function () {
-        Route::get('/', [SettingController::class,'index'])->name('index');
-        Route::post('store', [SettingController::class,'store'])->name('store');
-        Route::get('{id}/edit', [SettingController::class,'edit'])->name('edit');
-        Route::put('{id}/update', [SettingController::class,'update'])->name('update');
-        Route::delete('{id}/destroy', [SettingController::class,'destroy'])->name('destroy');
+        Route::get('/', [SettingController::class, 'index'])->name('index');
+        Route::post('store', [SettingController::class, 'store'])->name('store');
+        Route::get('{id}/edit', [SettingController::class, 'edit'])->name('edit');
+        Route::put('{id}/update', [SettingController::class, 'update'])->name('update');
+        Route::delete('{id}/destroy', [SettingController::class, 'destroy'])->name('destroy');
     });
 
     // Setting Post
     Route::prefix('houseProduct')->name('houseProduct.')->group(function () {
         Route::get('/', [HouseProductController::class, 'index'])->name('index');
+        Route::post('store', [HouseProductController::class, 'store'])->name('store');
     });
 });

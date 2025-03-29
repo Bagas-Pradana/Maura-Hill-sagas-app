@@ -11,6 +11,7 @@
     <!-- inject:css -->
     @stack('styles')
     <!-- endinject -->
+    @vite('resources/css/app.css')
 </head>
 
 <body>

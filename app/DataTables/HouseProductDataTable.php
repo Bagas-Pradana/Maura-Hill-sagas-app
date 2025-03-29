@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\Setting;
+use App\Models\HouseProduct;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -12,15 +12,21 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class SettingsDataTable extends DataTable
+class HouseProductDataTable extends DataTable
 {
     // Helper
     private function formatJsonAsList($data): string
     {
         $html = '<ul style="list-style-type: none; padding: 0; margin: 0;">';
-        foreach ($data as $key => $value) {
-            $html .= "<li><strong>{$key}:</strong> {$value}</li>";
+
+        // Periksa jika data adalah array
+        foreach ($data as $item) {
+            // Pastikan bahwa item adalah array dengan kunci 'label', 'value', dan 'unit'
+            if (isset($item['label'], $item['value'], $item['unit'])) {
+                $html .= "<li><strong>{$item['label']}:</strong> {$item['value']} {$item['unit']}</li>";
+            }
         }
+
         $html .= '</ul>';
         return $html;
     }
@@ -41,35 +47,36 @@ class SettingsDataTable extends DataTable
             ->editColumn('key', function ($row) {
                 return $row->key;
             })
-            ->editColumn('value', function ($row) {
+            ->editColumn('specification_table', function ($row) {
                 // Jika is_array true, decode JSON dan tampilkan sebagai list
-                if ($row->is_array) {
-                    $value = json_decode($row->value, true); // Decode JSON string ke array
-                    return $this->formatJsonAsList($value); // Format array sebagai list
+                $specification_table = json_decode($row->specification_table, true); // Decode JSON string ke array
+                if (is_array($specification_table)) {
+                    return $this->formatJsonAsList($specification_table); // Format array sebagai list
                 }
-                // Jika bukan array, tampilkan value biasa
-                return json_decode($row->value);
+                // Jika bukan array, tampilkan specification_table biasa
+                // return json_decode($row->specification_table);
+                return $row->specification_table;
             })
             ->addColumn('action', function ($row) {
                 // Set Url
                 $buttons = '';
-                $urlEdit = route('setting.edit', ':id');
-                $urlDelete = route('setting.destroy', ':id');
+                $urlEdit = '';
+                $urlDelete = '';
                 // Set Button
                 $buttons .= '
-                    <a href="javascript:void(0)" style="white-space:nowrap; padding: 8px; " class="btn hover-scale btn-warning btn-sm btn-edit" data-url="' . $urlEdit . '" data-id="' . $row->uuid . '"><i  class="mdi mdi-pencil"></i></a>
-                    <a href="javascript:void(0)" style="white-space:nowrap; padding: 8px;" class="btn hover-scale btn-danger btn-sm btn-delete" data-url="' . $urlDelete . '" data-id="' . $row->uuid . '"><i class="mdi mdi-delete"></i></a>
+                    <a href="javascript:void(0)" style="white-space:nowrap; padding: 8px; " class="btn hover-scale btn-warning btn-sm btn-edit" data-url="' . $urlEdit . '" data-id="1"><i  class="mdi mdi-pencil"></i></a>
+                    <a href="javascript:void(0)" style="white-space:nowrap; padding: 8px;" class="btn hover-scale btn-danger btn-sm btn-delete" data-url="' . $urlDelete . '" data-id="2"><i class="mdi mdi-delete"></i></a>
                 ';
 
                 return '<div class="d-flex flex-row justify-content-center gap-2">' . $buttons . '</div>';
             })
-            ->rawColumns(['uuid', 'action', 'value']);
+            ->rawColumns(['unit', 'title', 'specification_table', 'action']);
     }
 
     /**
      * Get the query source of dataTable.
      */
-    public function query(Setting $model): QueryBuilder
+    public function query(HouseProduct $model): QueryBuilder
     {
         return $model->newQuery();
     }
@@ -80,7 +87,7 @@ class SettingsDataTable extends DataTable
     public function html(): HtmlBuilder
     {
         return $this->builder()
-            ->setTableId('settings-table')
+            ->setTableId('houseProducts-table')
             ->columns($this->getColumns())
             ->minifiedAjax()
             //->dom('Bfrtip')
@@ -92,14 +99,6 @@ class SettingsDataTable extends DataTable
                     [2, 'asc']
                 ],
             ]);
-        // ->buttons([
-        //     Button::make('excel'),
-        //     Button::make('csv'),
-        //     Button::make('pdf'),
-        //     Button::make('print'),
-        //     Button::make('reset'),
-        //     Button::make('reload')
-        // ]);
     }
 
     /**
@@ -114,12 +113,18 @@ class SettingsDataTable extends DataTable
                 ->addClass('text-center ps-4')
                 ->searchable(false)
                 ->orderable(false),
-            Column::make('uuid')->title('ID')
+            Column::make('unit')->title('Type')
                 ->addClass('text-center')
                 ->searchable(true)
                 ->width(150),
-            Column::make('key')->title('Key')->searchable(true),
-            Column::make('value')->title('Value')->searchable(true),
+            Column::make('title')
+                ->title('Description Title')
+                ->searchable(true)
+                ->addClass('text-center pe-4'),
+            Column::make('specification_table')
+                ->title('Specification')
+                ->searchable(true)
+                ->addClass('text-center pe-4'),
             Column::computed('action')
                 ->exportable(false)
                 ->printable(false)
@@ -133,6 +138,6 @@ class SettingsDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'Settings_' . date('YmdHis');
+        return 'HouseProducts_' . date('YmdHis');
     }
 }

@@ -25,7 +25,7 @@ class HomeController extends Controller
 
     public function product(): \Illuminate\Contracts\View\View
     {
-        $products = HouseProduct::get()->map(function($item) {
+        $products = HouseProduct::get()->map(function ($item) {
             return [
                 'id' => $item->id,
                 'uuid' => $item->uuid,
