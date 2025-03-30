@@ -31,14 +31,46 @@
         </div>
     </div>
 
-{{-- ----------------------------------------------------CARD HOUSE---------------------------------------------------------------------------- --}}
-                {{-- @foreach ($products as $key => $product)
+<!-- Start Modal Form -->
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog"
+    aria-labelledby="modal-formLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-normal" id="modal-title">Modal title</h5>
+                <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Button -->
+                <div class="pb-2 flex justify-between gap-x-2 lg:gap-x-2 w-full sm:w-4/5 lg:w-full overflow-hidden font-bold text-body2 md:text-body1 lg:text-headline6 px-0">
+                    {{-- @dd($hasilProduct) --}}
+                    @foreach ($hasilProduct as $index => $product)
+                    <button id="house-button" data-unit="{{ $product['unit'] }}" data-key="{{ $index }}" type="button"
+                        class="house-button uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] p-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap hover:text-shade-white hover:bg-primary-500">
+                        {{ $product['unit'] }}
+                    </button>
+                    @endforeach
+                </div>
+
+                {{-- ----------------------------------------------------CARD HOUSE---------------------------------------------------------------------------- --}}
+                @foreach ($hasilProduct as $key => $product)
+                {{-- @dd($product) --}}
                 <div id="content-unit-{{ $key }}" data-unit="{{ $product['unit'] }}" data-key="{{ $key }}"
                 class="house-container bg-shade-white flex flex-col gap-y-8 min-h-full lg:h-auto justify-center lg:justify-around items-center text-headline4 md:text-headline3 sm:text-center lg:w-[100%] lg:flex-row lg:gap-x-16 lg:gap-y-8 lg:p-0 overflow-hidden @if($key !== 0) hidden @endif">
                     <!-- Gambar tetap di sebelah kiri dengan ukuran asli -->
                     <div id="content"
                     class="py-4 relative flex justify-center aspect-[2/3] sm:aspect-[3/4] lg:aspect-[4/5] max-w-[305px] max-h-[450px] sm:max-w-[380px] md:max-w-[400px] sm:min-h-[550px] lg:max-w-[450px] lg:min-h-[730px] xl:min-h-[800px] sm:animate-veryslow-bounce lg:justify-center lg:items-center lg:order-first overflow-hidden">
-                    @foreach ($product['images'] as $index => $productImages)
+                    {{-- UNTUK HANDLING JSON_DECODE --}}
+                    @php
+                        $images = json_decode($product['images'], true);
+                        $specificationTable = json_decode($product['specification_table'], true);
+                        $specificationList = json_decode($product['specification_list'], true);
+                    @endphp
+                    {{-- @dd($images, $specificationTable, $product['specification_list']) --}}
+                    @foreach ($images as $index => $productImages)
                             <img id="house-unit-{{ $key }}-{{ $index }}" src="{{ $productImages['url'] }}" data-index="{{ $index }}"
                                 alt="{{ $productImages['title'] }}"
                                 class="house-unit shadow-lg shadow-slate-800 rounded-xl h-full w-full lg:object-cover {{ $index !== 0 ? 'hidden' : '' }}" />
@@ -69,7 +101,7 @@
                         <div class="flex gap-y-4 flex-col xl:self-start gap-6 max-w-full">
                             <div class="w-full  text-body1 sm:text-headline6 lg:text-headline6 xl:text-headline5 2xl:text-headline4 break-words">
                                 <span class="uppercase block text-primary-500 font-bold text-center pb-4 lg:pb-0 lg:text-left">SPESIFIKASI UNIT {{ $product['unit'] }}</span>
-                                @foreach ($product['specification_list'] as $index => $productlist)
+                                @foreach ($specificationList as $index => $productlist)
                                 @if (!is_null($productlist))
                                 <span class="uppercase block text-primary-500 font-semibold sm:text-left lg:pb-0 lg:text-left">{{ $productlist }}</span>
                                 @endif
@@ -95,7 +127,7 @@
 
                                     <!-- Div Body -->
                                     <div class="flex justify-center items-center divide-x-2 divide-primary-500 text-primary-500 bg-shade-white text-center">
-                                        @foreach ($product['specification_table'] as $index => $product)
+                                        @foreach ($specificationTable as $index => $product)
                                         <div class="p-1 lg:p-3 break-words flex-1">{{ $product['value'] }} {{ $product['unit'] }}</div>
                                         @endforeach
                                     </div>
@@ -103,34 +135,12 @@
                             </div>
                         </div>
                         {{-- ------------------------------------------------- END HOUSE CARD UNIT CONTENT-------------------------------------------------------------------------- --}}
-                    {{-- </div>
-                </div> --}}
-                {{-- @endforeach --}}
+                    </div>
+                </div>
+                @endforeach
 {{-- ----------------------------------------------------CARD HOUSE---------------------------------------------------------------------------- --}}
 
-<!-- Start Modal Form -->
-<div class="modal fade" id="modal-form" tabindex="-1" role="dialog"
-    aria-labelledby="modal-formLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-normal" id="modal-title">Modal title</h5>
-                <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
-                    aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Button -->
-                <div class="pb-2 flex justify-between gap-x-2 lg:gap-x-2 w-full sm:w-4/5 lg:w-full overflow-hidden font-bold text-body2 md:text-body1 lg:text-headline6 px-0">
-                    {{-- @dd($hasilProduct) --}}
-                    @foreach ($hasilProduct as $index => $product)
-                    <button id="house-button" data-unit="{{ $product['unit'] }}" data-key="{{ $index }}" type="button"
-                        class="house-button uppercase flex-shrink-0 w-[45%] sm:min-w-max sm:w-[30%] p-1 border-4 border-primary-500 text-primary-500 text-center whitespace-nowrap">
-                        {{ $product['unit'] }}
-                    </button>
-                    @endforeach
-                </div>
+            <!-- Modal Form -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn bg-gradient-secondary"
@@ -146,13 +156,22 @@
 @push('scripts')
     {!! $dataTable->scripts() !!}
     <script>
-        // PREVIEW DATA
-        $('.btn-preview').click(function() {
-            $('#modal-form').modal('show');
-            $('#modal-title').text('Preview Layout');
-            $('#form-data').trigger('reset');
-            $('#btn-modal-action').text('Tambah Data').addClass('create-data').data
-                ('url', '{{ route('houseProduct.store') }}');
-        });
+        $(document).ready(function() {
+            // PREVIEW DATA
+            $('.btn-preview').click(function() {
+                $('#modal-form').modal('show');
+                $('#modal-title').text('Preview Layout');
+                $('#form-data').trigger('reset');
+                $('#btn-modal-action').text('Tambah Data').addClass('create-data').data
+                    ('url', '{{ route('houseProduct.store') }}');
+
+                // event click untuk preview layout
+                $('.house-button').click(function() {
+                    let indexData = $(this).data('key');
+                    console.log(indexData);
+                })
+            });
+
+        })
     </script>
 @endpush
