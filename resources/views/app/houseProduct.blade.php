@@ -93,6 +93,7 @@
     <script>
         $(document).ready(function() {
             // PREVIEW DATA
+
             $('.btn-preview').click(function() {
                 $('#modal-form').modal('show');
                 $('#modal-title').text('Preview Layout');
@@ -104,11 +105,13 @@
                     let lastClickedButton = null; // Setel tombol terakhir yang di klik
                     // firstButton.removeClass('text-primary-500');
                     // firstButton.addClass('text-shade-white bg-primary-500');
+                    // EVENT DELEGATION KARENA LOOPING MUNCUL SECARA DINAMIS
+                    $(document).on('click', '#close-content', function () {
+                        console.log('close');
+                        $('.house-coba').addClass('hidden');
+                    });
                     $('.house-button').click(function() {
                         $('.house-coba').removeClass('hidden');
-                        $('#close-content').click(function() {
-                            $('.house-coba').addClass('hidden');
-                        })
                         let indexData = $(this).data('key');
                         console.log(indexData);
                         $('.house-content-coba').html(indexData);
